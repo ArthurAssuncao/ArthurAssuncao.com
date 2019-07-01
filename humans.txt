@@ -1,0 +1,15 @@
+/* TEAM */
+	Developer: Arthur Assuncao
+	Github: https://github.com/arthurassuncao
+	Website: http://arthurassuncao.com
+	LinkedIn: https://www.linkedin.com/in/arthurassuncao
+	From: Minas Gerais, Brazil
+		
+
+/* SITE */
+	Last update: 2019/06/29
+	Language: Brazilian Portuguese (PT-BR)
+	Doctype: HTML5
+	IDE/Softwares: Visual Code
+	Standards: HTML5, CSS3
+	Components: Typescript, React
