@@ -19,7 +19,8 @@ const font = {
 }
 
 const size = {
-  headerHeight: '70px'
+  headerHeight: '70px',
+  footerHeight: '500px',
 }
 
 const theme = {

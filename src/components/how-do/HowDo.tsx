@@ -30,16 +30,16 @@ const HowDo = () => {
         className="presentation-mode"
       >
         <HowDoItem
-          title="Development with ReactJS."
-          description="Reactive and functional development with components for reuse."
+          title="Development with ReactJS"
+          description="Reactive and functional development with components for reuse"
         >
           <div>
             <IoIosPhonePortrait />
           </div>
         </HowDoItem>
         <HowDoItem
-          title="Responsive development."
-          description="Applications that fit all device sizes."
+          title="Responsive development"
+          description="Applications that fit all device sizes"
         >
           <div>
             <MdImportantDevices />

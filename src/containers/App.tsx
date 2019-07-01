@@ -6,6 +6,7 @@ import { reset } from 'styled-reset';
 import Header from '../components/header/Header';
 import HowDo from '../components/how-do/HowDo';
 import Projects from '../components/projects/Projects';
+import Footer from '../components/footer/Footer'
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   ${reset}
@@ -28,6 +29,7 @@ const App = () => {
         <Header />
         <HowDo />
         <Projects />
+        <Footer />
       </div>
     </>
   );
