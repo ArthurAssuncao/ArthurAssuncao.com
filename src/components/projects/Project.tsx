@@ -6,7 +6,7 @@ const ProjectItem = styled.div`
   background-color: white;
   padding: 10px;
   margin: 10px 20px 10px 20px;
-  border-radius: 2px 2px 0 0;
+  border-radius: 4px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 
   &:hover {
@@ -16,7 +16,7 @@ const ProjectItem = styled.div`
 
   img {
     height: 170px;
-    width: 320px;
+    width: 300px;
   }
 
   h1 {
@@ -32,24 +32,24 @@ const projectPropTypes = {
   imgUrl: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
-};
+}
 
 const projectDefaultProps = {
   name: 'Project',
-  imgUrl: 'https://via.placeholder.com/320x170',
+  imgUrl: 'https://via.placeholder.com/300x170',
   description: 'No description',
   url: '#'
-};
+}
 
 type InferPropTypes<
-  PropTypes,
-  DefaultProps = {},
-  Props = PropTypes.InferProps<PropTypes>
-> = {
-  [Key in keyof Props]: Key extends keyof DefaultProps
-    ? Props[Key] | DefaultProps[Key]
-    : Props[Key]
-};
+    PropTypes,
+    DefaultProps = {},
+    Props = PropTypes.InferProps<PropTypes>
+  > = {
+    [Key in keyof Props]: Key extends keyof DefaultProps
+      ? Props[Key] | DefaultProps[Key]
+      : Props[Key]
+}
 
 type ProjectProps = InferPropTypes<typeof projectPropTypes, typeof projectDefaultProps>;
 

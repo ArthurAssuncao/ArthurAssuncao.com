@@ -17,7 +17,7 @@ const Head = styled.header`
 
 const Header = () => {
   return (
-    <Head>
+    <Head className='header'>
       <Nav />
     </Head>
   );

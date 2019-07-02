@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-const CarouselItem = styled.div`
+const Item = styled.div`
   min-height: 500px;
   display: flex;
   align-items: center;
@@ -15,13 +16,37 @@ const CarouselItem = styled.div`
 
   svg {
     font-size: 300px;
-    padding-left: 20px;
+    padding: 0 20px;
   }
 `;
 
-const HowDoItem = (props: any) => {
+const howDoItemDefaultProps = {
+  childrenPosition: "last"
+}
+
+const howDoItemPropTypes = {
+  children: PropTypes.element,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  childrenPosition: PropTypes.string
+}
+
+type InferPropTypes<
+    PropTypes,
+    DefaultProps = {},
+    Props = PropTypes.InferProps<PropTypes>
+  > = {
+    [Key in keyof Props]: Key extends keyof DefaultProps
+      ? Props[Key] | DefaultProps[Key]
+      : Props[Key]
+}
+
+type HowDoItemProps = InferPropTypes<typeof howDoItemPropTypes, typeof howDoItemDefaultProps>;
+
+const HowDoItem = (props: HowDoItemProps) => {
   return (
-    <CarouselItem>
+    <Item>
+      { (props.childrenPosition === "first") ? props.children : '' }
       <div>
         <h1>
           { props.title }
@@ -30,9 +55,11 @@ const HowDoItem = (props: any) => {
           { props.description }
         </span>
       </div>
-      { props.children }
-    </CarouselItem>
+      { (props.childrenPosition === "last") ? props.children : '' }
+    </Item>
   );
 }
+
+HowDoItem.defaultProps = howDoItemDefaultProps;
 
 export default HowDoItem;

@@ -20,7 +20,7 @@ const font = {
 
 const size = {
   headerHeight: '70px',
-  footerHeight: '500px',
+  footerHeight: '540px',
 }
 
 const theme = {
