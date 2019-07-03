@@ -3,18 +3,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styled from 'styled-components';
 import { IoIosPhonePortrait } from 'react-icons/io';
 import { MdImportantDevices, MdPhonelinkSetup } from 'react-icons/md';
-
+import Section from './index.style';
 import HowDoItem from './HowDoItem';
-
-const Section = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  top: ${props => props.theme.sizes.headerHeight};
-  padding-bottom: ${props => props.theme.sizes.headerHeight};
-  background-color: ${props => props.theme.palette.neutral[0]};
-`;
 
 const HowDo = () => {
   return (
