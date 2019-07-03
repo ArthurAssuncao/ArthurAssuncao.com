@@ -16,7 +16,7 @@ const SocialButtonInternal = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: ${props => props.theme.color.pastelYellow};
+    color: ${props => props.theme.palette.neutral[0]};
   }
 
   a {
@@ -24,7 +24,7 @@ const SocialButtonInternal = styled.div`
   }
 
   a:hover{
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.palette.primary[0]};
   }
 
   .social-name {

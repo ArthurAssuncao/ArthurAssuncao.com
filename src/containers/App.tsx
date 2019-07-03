@@ -1,18 +1,18 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import { ThemeType } from './../styles/theme'
+import { ThemeType } from '../components/themes'
 import { reset } from 'styled-reset';
 
 import './App.css';
 
-import Header from '../components/header/Header';
-import HowDo from '../components/how-do/HowDo';
-import Projects from '../components/projects/Projects';
-import Footer from '../components/footer/Footer'
+import Header from '../components/header';
+import HowDo from '../components/how-do';
+import Projects from '../components/projects';
+import Footer from '../components/footer'
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   ${reset}
-  background-color: ${({ theme }) => theme.color.bg};
+  background-color: ${({ theme }) => theme.palette.neutral[0]};
 `
 
 

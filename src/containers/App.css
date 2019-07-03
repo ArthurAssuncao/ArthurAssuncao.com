@@ -24,3 +24,8 @@ a {
   color: white;
 }
 
+.section-title{
+  font-size: 2em;
+  text-align: center;
+  margin: 10px 0;
+}

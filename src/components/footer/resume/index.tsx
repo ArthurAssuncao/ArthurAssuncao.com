@@ -19,7 +19,7 @@ const ResumeButtonInternal = styled.div`
     margin-right: 2px;
   }
   .link {
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.palette.primary[0]};
   }
 `;
 

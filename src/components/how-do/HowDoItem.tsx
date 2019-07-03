@@ -4,10 +4,17 @@ import PropTypes from 'prop-types';
 
 const Item = styled.div`
   min-height: 500px;
+  max-width: 76vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${props => props.theme.color.pastelYellow};
+  align-self: center;
+  background-color: ${props => props.theme.palette.neutral[0]};
+  line-height: 20px;
+
+  .how-do-item-description {
+    max-width: 200px;
+  }
 
   h1 {
     font-size: 2em;
@@ -51,7 +58,7 @@ const HowDoItem = (props: HowDoItemProps) => {
         <h1>
           { props.title }
         </h1>
-        <span>
+        <span className='how-do-item-description'>
           { props.description }
         </span>
       </div>

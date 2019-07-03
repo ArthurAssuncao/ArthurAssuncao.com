@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './containers/App';
 import { ThemeProvider } from 'styled-components';
-import theme from './styles/theme';
+import theme from './components/themes';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

@@ -54,11 +54,11 @@ const FormInternal = styled.div`
       text-decoration: none;
       font-weight: 300;
       font-size: 23px;
-      color: ${props => props.theme.color.pastelYellow};
-      background-color: ${props => props.theme.color.primary};
+      color: ${props => props.theme.palette.neutral[0]};
+      background-color: ${props => props.theme.palette.primary[0]};
       text-align: center;
       transition: all 0.2s;
-      box-shadow: 0 0 5px 0 ${props => props.theme.color.shadow};
+      box-shadow: 0 0 5px 0 ${props => props.theme.palette.grayscale[1]};
     }
     .button-submit:hover{
       color: lightgray;
@@ -90,7 +90,7 @@ const FormInternal = styled.div`
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.45);
-      box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 4px 20px 0px ${props => props.theme.palette.grayscale[1]};
     }
   }
 
