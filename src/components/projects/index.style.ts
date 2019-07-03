@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const SectionCarousel = styled.section`
-  background-color: ${props => props.theme.palette.neutral[0]};
-  padding: 100px 0;
+  background-color: ${props => props.theme.palette.neutral[3]};
+  padding: 200px 0;
   li {
-    background-color: ${props => props.theme.palette.neutral[0]} !important;
+    background-color: ${props => props.theme.palette.neutral[3]} !important;
   }
   .projects-carousel{
     margin-top: 10px;

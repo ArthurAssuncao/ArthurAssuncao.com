@@ -21,7 +21,7 @@ theme.palette = {
     dark: ['#CA2619', '#AF1408']
   },
   // pastel yellow, pastel blue, pastel green
-  neutral: ['rgb(252,247,222)', 'rgb(222,243,253)', 'rgb(222,253,224)'],
+  neutral: ['rgb(252,247,222)', 'rgb(222,243,253)', 'rgb(222,253,224)', 'rgb(255, 253, 208)'],
   // pastel red
   danger: 'rgb(255,105,97)',
   // pastel oragen
@@ -30,7 +30,7 @@ theme.palette = {
   success: 'rgb(222,253,224)',
   // pastel blue
   info: 'rgb(222,243,253)',
-  grayscale: ['#212121', '#616161', '#9e9e9e', '#bdbdbd', '#e0e0e0', '#ffffff']
+  grayscale: ['#212121', '#616161', '#9e9e9e', '#bdbdbd', '#e0e0e0', '#f7f7f7', '#ffffff']
 }
 
 theme.fonts = {
