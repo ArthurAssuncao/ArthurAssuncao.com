@@ -1,14 +1,11 @@
 import React from 'react';
 
+import Footer from '../components/footer';
 import Header from '../components/header';
 import HowDo from '../components/how-do';
 import Projects from '../components/projects';
-import Footer from '../components/footer'
-
-import GlobalStyle from './GlobalStyle';
 import AppStyle from './App.style';
-
-
+import GlobalStyle from './GlobalStyle';
 
 const App = () => {
   return (
