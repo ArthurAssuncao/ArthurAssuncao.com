@@ -1,11 +1,7 @@
 
 import React from 'react';
-import styled from 'styled-components';
 import { FaPython, FaReact, FaJsSquare, FaGithub, FaHtml5, FaCss3Alt, FaTrello, FaLinux, FaYarn, FaNpm } from 'react-icons/fa';
-
-const AboutMeInternal = styled.div`
-  
-`;
+import AboutMeInternal from './index.style';
 
 const AboutMe = () => {
   return (
