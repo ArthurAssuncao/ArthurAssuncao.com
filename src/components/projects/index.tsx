@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Project from './Project';
@@ -7,7 +7,16 @@ import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbn
 import imgArthurAssuncaoSiteOld from '../../assets/images/projects/arthurassuncao-com2016/thumbnail-0.jpg'
 import SectionCarousel from './index.style';
 
+const initialProject = 1;
+
 const Projects = () => {
+  const [currentProject, setCurrentProject] = useState(initialProject);
+
+  const HandlerProject = (e: any) => {
+    console.log(e);
+    setCurrentProject(e);
+  }
+
   return (
     <SectionCarousel id="projects">
       <span className='section-title'>Projects</span>
@@ -15,25 +24,33 @@ const Projects = () => {
         showThumbs={false}
         showStatus={false}
         showIndicators={false}
-        showArrows={true}
+        showArrows
         infiniteLoop={true}
         useKeyboardArrows
-        autoPlay={true}
+        autoPlay={false}
         transitionTime={300}
-        emulateTouch
-        centerMode={true}
+        // interval={1200}
+        emulateTouch={false}
+        centerMode
         centerSlidePercentage={25}
+        selectedItem={initialProject}
+        onChange={HandlerProject}
+        onClickItem={HandlerProject}
+        onClickThumb={HandlerProject}
         className='projects-carousel'
       >
         <Project
+          id={0}
           name={'Globo Histórias'}
           imgUrl={imgGloboHistorias}
           description={`Protótipo de Hackathon participante do Hackathon da Globo 2016.
 
           O app permite que pessoas de qualquer lugar, em qualquer momento, possam contar suas experiências, histórias para a Globo e a Globo, após moderação, pode incluir essas histórias em notícias relacionadas. Melhorando a experiência de que lê notícia em seus portais, além de aumentar a divulgação das notícias ao permitir que as pessoas que contaram suas histórias compartilhem links de notícias onde, ao final do texto, sua história está contada em vídeo.`}
           url={'https://github.com/ArthurAssuncao/globo-historias'}
+          showLegend={currentProject === 0}
         />
         <Project
+          id={1}
           name={'EntregaRápida'}
           imgUrl={imgEntregaRapida}
           description={`Sistema colaborativo que permite o transporte de objetos dentro da região por meio de entregadores cadastrados. Desta forma diminuindo o custo e tempo no transporte desses objetos e, até, possibilitando entregas no mesmo dia.
@@ -44,8 +61,10 @@ const Projects = () => {
           
           O EntregaRápida foi vencedor do hackathon da Google Developer Group DevFest Sudeste.`}
           url={'http://github.com/ArthurAssuncao/EntregaRapida'}
+          showLegend={currentProject === 1}
         />
         <Project
+          id={2}
           name={'Biblioteka App'}
           imgUrl={'http://armandoassuncao.github.io/static/img/portfolio/biblioteka/thumbnail.jpeg'}
           description={`Aplicativo criado com o objetivo de melhorar a utilização da biblioteca do IF Sudeste MG - Campus Barbacena.
@@ -68,8 +87,10 @@ const Projects = () => {
           
           Utilizado Java para o desenvolvimento do aplicativo e PHP/SlimFramework com arquitetura API rest no servidor.`}
           url={'https://play.google.com/store/apps/details?id=io.biblioteka.app'}
+          showLegend={currentProject === 2}
         />
         <Project
+          id={3}
           name={'ArthurAssuncao.com old version'}
           imgUrl={imgArthurAssuncaoSiteOld}
           description={`Meu site pessoal onde divulgo meu currículo, meus projetos, etc e o mantenho atualizado com o que há de mais interessante e recente em termos de tecnologias web.
@@ -88,6 +109,7 @@ const Projects = () => {
           
           Agora em 2019, desenvolvi novamente o site utilizando ReactJS com styled components para um desenvolvimento mais ágil.`}
           url={'https://github.com/ArthurAssuncao/arthurassuncao_old.github.io'}
+          showLegend={currentProject === 3}
         />
       </Carousel>
     </SectionCarousel>

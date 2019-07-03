@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import ProjectItem from './project.style';
 
 const projectPropTypes = {
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   imgUrl: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
+  showLegend: PropTypes.bool.isRequired
 }
 
 const projectDefaultProps = {
@@ -31,12 +33,13 @@ type ProjectProps = InferPropTypes<typeof projectPropTypes, typeof projectDefaul
 const Project = (props: ProjectProps) => {
   return (
     <ProjectItem>
-      <div>
+      <div className='item'>
         <h1>
           { props.name }
         </h1>
         <img alt='' src={ props.imgUrl } />
       </div>
+      {/* <p className={ props.showLegend ? 'legend': 'legend hidden' }>{ props.description }</p> */}
     </ProjectItem>
   );
 }
