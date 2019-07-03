@@ -1,6 +1,5 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import styled from 'styled-components';
 import { IoIosPhonePortrait } from 'react-icons/io';
 import { MdImportantDevices, MdPhonelinkSetup } from 'react-icons/md';
 import Section from './index.style';
