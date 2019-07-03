@@ -1,22 +1,11 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import styled from 'styled-components';
 import { Carousel } from 'react-responsive-carousel';
 import Project from './Project';
 import imgGloboHistorias from '../../assets/images/projects/globo-historias/thumbnail.jpg'
 import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbnail.jpeg'
 import imgArthurAssuncaoSiteOld from '../../assets/images/projects/arthurassuncao-com2016/thumbnail-0.jpg'
-
-const SectionCarousel = styled.section`
-  background-color: ${props => props.theme.palette.neutral[0]};
-  padding: 100px 0;
-  li {
-    background-color: ${props => props.theme.palette.neutral[0]} !important;
-  }
-  .projects-carousel{
-    margin-top: 10px;
-  }
-`;
+import SectionCarousel from './index.style';
 
 const Projects = () => {
   return (
