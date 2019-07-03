@@ -17,6 +17,10 @@ const Item = styled.div`
   h1 {
     font-size: 2em;
     line-height: 2em;
+
+    &:first-letter {
+      font-size: 1.5em;
+    }
   }
 
   svg {
