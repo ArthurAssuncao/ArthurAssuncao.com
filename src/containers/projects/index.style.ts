@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionCarousel = styled.section`
+const ProjectsStyle = styled.section`
   background-color: ${props => props.theme.palette.neutral[3]};
   padding: 200px 0;
   li {
@@ -11,4 +11,4 @@ const SectionCarousel = styled.section`
   }
 `;
 
-export default SectionCarousel;
+export default ProjectsStyle;

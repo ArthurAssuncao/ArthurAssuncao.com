@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Head = styled.header`
+const HeaderStyle = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,4 +13,4 @@ const Head = styled.header`
   height: ${props => props.theme.sizes.headerHeight};
 `;
 
-export default Head;
+export default HeaderStyle;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Section = styled.section`
+const HowDoStyle = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,4 +10,4 @@ const Section = styled.section`
   background-color: ${props => props.theme.palette.neutral[0]};
 `;
 
-export default Section;
+export default HowDoStyle;

@@ -1,12 +1,12 @@
 
 import React from 'react';
 import { FaPython, FaReact, FaJsSquare, FaGithub, FaHtml5, FaCss3Alt, FaTrello, FaLinux, FaYarn, FaNpm } from 'react-icons/fa';
-import AboutMeInternal from './index.style';
+import AboutMeStyle from './index.style';
 
 const AboutMe = () => {
   return (
-    <AboutMeInternal>
-    </AboutMeInternal>
+    <AboutMeStyle>
+    </AboutMeStyle>
   );
 }
 

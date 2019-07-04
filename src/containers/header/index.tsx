@@ -1,12 +1,12 @@
 import React from 'react';
 import Nav from '../../components/nav';
-import Head from './index.style';
+import HeaderStyle from './index.style';
 
 const Header = () => {
   return (
-    <Head className='header'>
+    <HeaderStyle className='header'>
       <Nav />
-    </Head>
+    </HeaderStyle>
   );
 }
 

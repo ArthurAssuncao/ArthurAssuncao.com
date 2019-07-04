@@ -5,7 +5,7 @@ import Project from '../../components/project';
 import imgGloboHistorias from '../../assets/images/projects/globo-historias/thumbnail.jpg'
 import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbnail.jpeg'
 import imgArthurAssuncaoSiteOld from '../../assets/images/projects/arthurassuncao-com2016/thumbnail-0.jpg'
-import SectionCarousel from './index.style';
+import ProjectsStyle from './index.style';
 
 const initialProject = 1;
 
@@ -18,7 +18,7 @@ const Projects = () => {
   }
 
   return (
-    <SectionCarousel id="projects">
+    <ProjectsStyle id="projects">
       <span className='section-title'>Projects</span>
       <Carousel
         showThumbs={false}
@@ -112,7 +112,7 @@ const Projects = () => {
           showLegend={currentProject === 3}
         />
       </Carousel>
-    </SectionCarousel>
+    </ProjectsStyle>
   );
 }
 

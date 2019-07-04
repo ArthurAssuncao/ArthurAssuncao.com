@@ -2,13 +2,13 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoIosPhonePortrait } from 'react-icons/io';
 import { MdImportantDevices, MdPhonelinkSetup } from 'react-icons/md';
-import Section from './index.style';
+import HowDoStyle from './index.style';
 import HowDoItem from '../../components/how-do-item';
 
 
 const HowDo = () => {
   return (
-    <Section id="job">
+    <HowDoStyle id="job">
       <HowDoItem
           title="Development with components for reuse"
           description="Reactive and functional development with ReactJS, TypeScript and Jest for unit testing (TDD), thus providing a more reliable code and easy maintenance."
@@ -34,7 +34,7 @@ const HowDo = () => {
           <MdPhonelinkSetup />
         </div>
       </HowDoItem>
-    </Section>
+    </HowDoStyle>
   );
 }
 
