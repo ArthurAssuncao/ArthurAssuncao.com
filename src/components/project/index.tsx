@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ProjectItem from './Project.style';
+import ProjectItem from './index.style';
 
 const projectPropTypes = {
   id: PropTypes.number.isRequired,

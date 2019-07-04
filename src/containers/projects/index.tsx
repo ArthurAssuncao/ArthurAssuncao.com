@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import Project from './Project';
+import Project from '../../components/project';
 import imgGloboHistorias from '../../assets/images/projects/globo-historias/thumbnail.jpg'
 import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbnail.jpeg'
 import imgArthurAssuncaoSiteOld from '../../assets/images/projects/arthurassuncao-com2016/thumbnail-0.jpg'
