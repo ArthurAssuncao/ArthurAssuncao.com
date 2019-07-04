@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Project from './Project';
 import imgGloboHistorias from '../../assets/images/projects/globo-historias/thumbnail.jpg'
