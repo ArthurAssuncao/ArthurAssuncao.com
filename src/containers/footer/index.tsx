@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Form from './Form';
-import SocialButtons from './Social';
-import ResumeButton from './Resume';
+import SocialButtons from '../../components/footer/Social';
+import ResumeButton from '../../components/footer/Resume';
+import Form from '../../components/footer/Form';
 
 const Foot = styled.footer`
   display: flex;
