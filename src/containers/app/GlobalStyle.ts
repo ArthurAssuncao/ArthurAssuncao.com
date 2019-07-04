@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { ThemeType } from '../components/themes'
+import { ThemeType } from '../../components/themes';
 import { reset } from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     font-size: 10px;
     background-color: ${({ theme }) => theme.palette.neutral[0]};
   }
+
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
