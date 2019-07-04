@@ -1,0 +1,6 @@
+{
+  "workbench.colorCustomizations": {
+    "tab.unfocusedActiveBorder": "#fff0"
+  },
+  "window.title": "${appName} ${separator} ${rootName} : ${activeFolderShort}${separator}${activeEditorShort}"
+}
