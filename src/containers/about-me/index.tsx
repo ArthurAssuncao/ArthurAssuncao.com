@@ -18,17 +18,17 @@ Hi, I am Professor of Computing at IF Sudeste MG, located in Brazil, and Master 
 I participated in Hackathons, as the 2nd Hackathon of the Rede Globo and Google Developer Groups Sudeste BH 2015. This last we won \o/
 
 Education
-Mestrado em Ciência da Computação 
-Universidade Federal de Ouro Preto (UFOP) 
-2014 - 2016 
-Superior de Tecnologia em Sistemas para Internet 
-Instituto Federal do Sudeste de Minas Gerais (IFSEMG) 
+Mestrado em Ciência da Computação
+Universidade Federal de Ouro Preto (UFOP)
+2014 - 2016
+Superior de Tecnologia em Sistemas para Internet
+Instituto Federal do Sudeste de Minas Gerais (IFSEMG)
 2011 - 2014
 
 Scientific production
 Produções
 
-My skills include 
+My skills include
 More confortable
 HTML5
 CSS3
