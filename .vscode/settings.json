@@ -1,6 +1,14 @@
 {
   "workbench.colorCustomizations": {
-    "tab.unfocusedActiveBorder": "#fff0"
+    "tab.unfocusedActiveBorder": "#fff0",
+    "tab.hoverBorder": "#00ffff",
+    "tab.inactiveModifiedBorder": "#ff0000"
   },
-  "window.title": "${appName} ${separator} ${rootName} : ${activeFolderShort}${separator}${activeEditorShort}"
+  "window.title": "${appName} ${separator} ${rootName} : ${activeFolderShort}${separator}${activeEditorShort}",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.letterSpacing": 0.2,
+  "editor.lineHeight": 20,
+  "editor.renderWhitespace": "none"
 }
