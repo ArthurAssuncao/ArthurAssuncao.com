@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import Project from '../../components/project';
+import Project from '../../components/Project';
 import imgGloboHistorias from '../../assets/images/projects/globo-historias/thumbnail.jpg'
 import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbnail.jpeg'
 import imgArthurAssuncaoSiteOld from '../../assets/images/projects/arthurassuncao-com2016/thumbnail-0.jpg'
@@ -56,9 +56,9 @@ const Projects = () => {
           description={`Sistema colaborativo que permite o transporte de objetos dentro da região por meio de entregadores cadastrados. Desta forma diminuindo o custo e tempo no transporte desses objetos e, até, possibilitando entregas no mesmo dia.
 
           O EntregaRápida também permite o envio por meio do EcoPacote, um pacote que utiliza as ciclovias para a entrega. Essas ciclovias têm sido implementadas em diversas cidades do Brasil, como na cidade de Belo Horizonte.
-          
+
           A partir das características do app é possível trazer uma série de melhorias para a sociedade, gerando novas oportunidades de négocio e, ao mesmo tempo, oferecer maior comodidade no envio e recebimento de objetos dentro da cidade, tornando-a mais morderna.
-          
+
           O EntregaRápida foi vencedor do hackathon da Google Developer Group DevFest Sudeste.`}
           url={'http://github.com/ArthurAssuncao/EntregaRapida'}
           showLegend={currentProject === 1}
@@ -70,21 +70,21 @@ const Projects = () => {
           description={`Aplicativo criado com o objetivo de melhorar a utilização da biblioteca do IF Sudeste MG - Campus Barbacena.
 
           Fui colaborador do projeto de autoria do Armando Assunção.
-          
+
           Tem as funcionalidades:
-          
+
           Buscar Livros
-          
+
           Reservar Livros
-          
+
           Renovar Livros
-          
+
           Exibir Extrato
-          
+
           Notificação
-          
+
           Renovação Autómatica
-          
+
           Utilizado Java para o desenvolvimento do aplicativo e PHP/SlimFramework com arquitetura API rest no servidor.`}
           url={'https://play.google.com/store/apps/details?id=io.biblioteka.app'}
           showLegend={currentProject === 2}
@@ -96,17 +96,17 @@ const Projects = () => {
           description={`Meu site pessoal onde divulgo meu currículo, meus projetos, etc e o mantenho atualizado com o que há de mais interessante e recente em termos de tecnologias web.
 
           História
-          
+
           Em 2012, o site não tinha o código fonte aberto, utilizava PHP e Bootstrap 2.x.
-          
+
           Em 2013, o site teve seu código fonte aberto e hospedado no Github.
-          
+
           Em 2014, o site teve o Bootstrap atualizado para a versão 3.x.
-          
+
           Em 2015, o site passou por várias reformulações, primeiro foi a interface material design com o MaterializeCSS, em seguida foi removido o PHP e deixado apenas estático. Uma versão em Material Design Lite foi iniciada, porém descontinuada devido a falta de recursos desse framework da Google. Nesta versão mais recente de 2015, o site é feito utilizando AngularJS e AngularJS Material, que oferecem muitos recursos com grande produtividade, além de um bom desempenho, mesmo neste último quesito sendo inferior ao ReactJS e AngularJS 2.0.
-          
-          Além de todas estas mudanças, em 2015, comecei a utilizar o SASS para melhorar a códificação CSS, Jade pra modularizar os HTML e, o mais interessante de todos, o Grunt como automatizador. O ganho em desempenho e produtividade que um automatizador gera é gigantesco. 
-          
+
+          Além de todas estas mudanças, em 2015, comecei a utilizar o SASS para melhorar a códificação CSS, Jade pra modularizar os HTML e, o mais interessante de todos, o Grunt como automatizador. O ganho em desempenho e produtividade que um automatizador gera é gigantesco.
+
           Agora em 2019, desenvolvi novamente o site utilizando ReactJS com styled components para um desenvolvimento mais ágil.`}
           url={'https://github.com/ArthurAssuncao/arthurassuncao_old.github.io'}
           showLegend={currentProject === 3}

@@ -3,7 +3,7 @@ import React from 'react';
 import Footer from '../footer';
 import Header from '../header';
 import HowDo from '../how-do';
-import Projects from '../projects';
+import Projects from '../Projects';
 import AppStyle from './App.style';
 import GlobalStyle from './GlobalStyle';
 
