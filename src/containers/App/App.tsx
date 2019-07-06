@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Footer from '../Footer';
-import Header from '../header';
+import Header from '../Header';
 import HowDo from '../HowDo';
 import Projects from '../Projects';
 import AppStyle from './App.style';
