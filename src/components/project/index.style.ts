@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ProjectItem = styled.div`  
+const ProjectStyle = styled.div`
   height: 300px;
 
   .item {
@@ -42,4 +42,4 @@ const ProjectItem = styled.div`
   }
 `;
 
-export default ProjectItem;
+export default ProjectStyle;

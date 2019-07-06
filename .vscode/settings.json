@@ -2,7 +2,8 @@
   "workbench.colorCustomizations": {
     "tab.unfocusedActiveBorder": "#fff0",
     "tab.hoverBorder": "#00ffff",
-    "tab.inactiveModifiedBorder": "#ff0000"
+    "tab.inactiveModifiedBorder": "#ccc",
+    "tab.activeModifiedBorder": "#ff0000"
   },
   "window.title": "${appName} ${separator} ${rootName} : ${activeFolderShort}${separator}${activeEditorShort}",
   "workbench.editor.highlightModifiedTabs": true,

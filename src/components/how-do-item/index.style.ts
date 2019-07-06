@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Item = styled.div`
+const HowDoItemStyle = styled.div`
   min-height: 500px;
   max-width: 76vw;
   display: flex;
@@ -29,4 +29,4 @@ const Item = styled.div`
   }
 `;
 
-export default Item;
+export default HowDoItemStyle;

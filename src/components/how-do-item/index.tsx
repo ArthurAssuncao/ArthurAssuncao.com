@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Item from './index.style'
+import HowDoItemStyle from './index.style'
 
 const howDoItemDefaultProps = {
   childrenPosition: "last"
@@ -14,31 +14,31 @@ const howDoItemPropTypes = {
 }
 
 type InferPropTypes<
-    PropTypes,
-    DefaultProps = {},
-    Props = PropTypes.InferProps<PropTypes>
+  PropTypes,
+  DefaultProps = {},
+  Props = PropTypes.InferProps<PropTypes>
   > = {
     [Key in keyof Props]: Key extends keyof DefaultProps
-      ? Props[Key] | DefaultProps[Key]
-      : Props[Key]
-}
+    ? Props[Key] | DefaultProps[Key]
+    : Props[Key]
+  }
 
 type HowDoItemProps = InferPropTypes<typeof howDoItemPropTypes, typeof howDoItemDefaultProps>;
 
 const HowDoItem = (props: HowDoItemProps) => {
   return (
-    <Item>
-      { (props.childrenPosition === "first") ? props.children : '' }
+    <HowDoItemStyle>
+      {(props.childrenPosition === "first") ? props.children : ''}
       <div>
         <h1>
-          { props.title }
+          {props.title}
         </h1>
         <span className='how-do-item-description'>
-          { props.description }
+          {props.description}
         </span>
       </div>
-      { (props.childrenPosition === "last") ? props.children : '' }
-    </Item>
+      {(props.childrenPosition === "last") ? props.children : ''}
+    </HowDoItemStyle>
   );
 }
 

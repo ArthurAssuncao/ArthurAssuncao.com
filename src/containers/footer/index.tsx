@@ -1,26 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
-import SocialButtons from '../../components/social';
-import ResumeButton from '../../components/footer';
+import SocialBar from '../../components/social-bar';
+import ResumeButton from '../../components/resume-button';
 import Form from '../../components/form';
-
-const Foot = styled.footer`
-  display: flex;
-  flex-direction: column;
-  background-color: ${props => props.theme.palette.primary[1]};
-  height: ${props => props.theme.sizes.footerHeight};
-  color: ${props => props.theme.palette.neutral[0]};
-  padding: 30px;
-`;
+import FooterStyle from './index.style';
 
 const Footer = () => {
   return (
-    <Foot className='footer' id='contact'>
+    <FooterStyle className='footer' id='contact'>
       <span className='section-title'>Contact</span>
       <Form />
-      <SocialButtons />
+      <SocialBar />
       <ResumeButton />
-    </Foot>
+    </FooterStyle>
   );
 }
 

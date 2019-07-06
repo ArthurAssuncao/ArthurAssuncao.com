@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ProjectItem from './index.style';
+import ProjectStyle from './index.style';
 
 const projectPropTypes = {
   id: PropTypes.number.isRequired,
@@ -19,28 +19,28 @@ const projectDefaultProps = {
 }
 
 type InferPropTypes<
-    PropTypes,
-    DefaultProps = {},
-    Props = PropTypes.InferProps<PropTypes>
+  PropTypes,
+  DefaultProps = {},
+  Props = PropTypes.InferProps<PropTypes>
   > = {
     [Key in keyof Props]: Key extends keyof DefaultProps
-      ? Props[Key] | DefaultProps[Key]
-      : Props[Key]
-}
+    ? Props[Key] | DefaultProps[Key]
+    : Props[Key]
+  }
 
 type ProjectProps = InferPropTypes<typeof projectPropTypes, typeof projectDefaultProps>;
 
 const Project = (props: ProjectProps) => {
   return (
-    <ProjectItem>
+    <ProjectStyle>
       <div className='item'>
         <h1>
-          { props.name }
+          {props.name}
         </h1>
-        <img alt='' src={ props.imgUrl } />
+        <img alt='' src={props.imgUrl} />
       </div>
       {/* <p className={ props.showLegend ? 'legend': 'legend hidden' }>{ props.description }</p> */}
-    </ProjectItem>
+    </ProjectStyle>
   );
 }
 

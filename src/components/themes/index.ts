@@ -1,9 +1,12 @@
 
+// https://mycolor.space/?hex=%23DC443A&sub=1
 // http://paletton.com/
 // https://www.canva.com/colors/color-palettes/pomegranate-crush/
 // https://coolors.co/1976d2-2196f3-71bcf7-97cef9-c2e2fb
 // https://colors.styled-components.com/
 // https://www.sprucerd.com/blog/how-to-select-a-color-palette-for-your-branding
+// https://br.pinterest.com/rodrigopulse/cores/
+// https://www.colourlovers.com/palettes/most-loved/all-time/meta
 
 const theme = {
   palette: {} as any,
