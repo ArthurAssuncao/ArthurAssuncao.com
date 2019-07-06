@@ -2,9 +2,8 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoIosPhonePortrait } from 'react-icons/io';
 import { MdImportantDevices, MdPhonelinkSetup } from 'react-icons/md';
-import HowDoStyle from './index.style';
-import HowDoItem from '../../components/how-do-item';
-
+import HowDoStyle from './HowDo.style';
+import HowDoItem from '../../components/HowDoItem';
 
 const HowDo = () => {
   return (
