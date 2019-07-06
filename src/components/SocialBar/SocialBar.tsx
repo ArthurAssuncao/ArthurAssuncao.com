@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaAngellist } from 'react-icons/fa';
-import SocialBarStyle from './index.style';
+import SocialBarStyle from './SocialBar.style';
 import SocialButton from '../social-button';
 
 const SocialBar = () => {

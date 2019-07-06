@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialBar from '../../components/social-bar';
+import SocialBar from '../../components/SocialBar';
 import ResumeButton from '../../components/ResumeButton';
 import Form from '../../components/Form';
 import FooterStyle from './Footer.style';
