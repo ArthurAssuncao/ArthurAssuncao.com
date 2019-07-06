@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialBar from '../../components/social-bar';
-import ResumeButton from '../../components/resume-button';
+import ResumeButton from '../../components/ResumeButton';
 import Form from '../../components/Form';
 import FooterStyle from './Footer.style';
 

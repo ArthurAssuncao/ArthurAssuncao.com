@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaRegFilePdf } from 'react-icons/fa';
-import ResumeButtonStyle from './index.style';
+import ResumeButtonStyle from './ResumeButton.style';
 // import resume from './../../../assets/files/resume_arthur_assuncao.pdf';
 
 const ResumeButton = () => {
