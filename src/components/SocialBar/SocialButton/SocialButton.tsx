@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialButtonStyle from './index.style';
+import SocialButtonStyle from './SocialButton.style';
 
 const SocialButton = (props: any) => {
   return (
