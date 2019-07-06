@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaUserCircle, FaEnvelope, FaPen, FaPaperPlane } from 'react-icons/fa';
-import FormStyle from './index.style';
+import FormStyle from './Form.style';
 
 const Form = () => {
   return (

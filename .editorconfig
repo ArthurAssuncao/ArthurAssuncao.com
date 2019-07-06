@@ -2,12 +2,20 @@
 root = true
 
 [*]
-indent_style = space
+charset = utf-8
 indent_size = 2
 end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
+indent_style = space
 insert_final_newline = true
+trim_trailing_whitespace = true
 
+# Markdown syntax specifies that trailing whitespaces can be meaningful,
+# so let’s not trim those. e.g. 2 trailing spaces = linebreak (<br />)
+# See https://daringfireball.net/projects/markdown/syntax#p
 [*.md]
+trim_trailing_whitespace = false
+
+# Disable trailing whitespace removal in diff files,
+# where whitespace is meaningful
+[*.diff]
 trim_trailing_whitespace = false

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import HowDoItemStyle from './index.style'
+import HowDoItemStyle from './HowDoItem.style'
 
 const howDoItemDefaultProps = {
   childrenPosition: "last"

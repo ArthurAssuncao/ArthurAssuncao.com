@@ -10,9 +10,9 @@ const HowDo = () => {
   return (
     <HowDoStyle id="job">
       <HowDoItem
-          title="Development with components for reuse"
-          description="Reactive and functional development with ReactJS, TypeScript and Jest for unit testing (TDD), thus providing a more reliable code and easy maintenance."
-        >
+        title="Development with components for reuse"
+        description="Reactive and functional development with ReactJS, TypeScript and Jest for unit testing (TDD), thus providing a more reliable code and easy maintenance."
+      >
         <div>
           <IoIosPhonePortrait />
         </div>
