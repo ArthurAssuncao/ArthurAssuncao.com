@@ -18,7 +18,7 @@ const theme = {
 theme.palette = {
   // PANTONE 17-1564 TPX Fiesta
   primary: 'rgb(220, 68, 58)',
-  accent: '#2CA842', //#DC883A, #257B87
+  accent: '#2CA842', //#2CA842, #DC883A, #257B87
   // PANTONE 17-1564 TPX Fiesta: light 1, light 2, dark 1 and dark 2
   secondary: {
     lightened: ['#FF958C', '#EB675C'],

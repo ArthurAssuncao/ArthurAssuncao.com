@@ -12,12 +12,12 @@ const App = () => {
     <>
       <GlobalStyle />
       <AppStyle className="App">
-        <Header />
+        <Header className='header' />
         <main className='main'>
           <HowDo />
           <Projects />
         </main>
-        <Footer />
+        <Footer className='footer' />
       </AppStyle>
     </>
   );

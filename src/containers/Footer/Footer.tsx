@@ -4,9 +4,9 @@ import ResumeButton from '../../components/ResumeButton';
 import Form from '../../components/Form';
 import FooterStyle from './Footer.style';
 
-const Footer = () => {
+const Footer = (props: any) => {
   return (
-    <FooterStyle className='footer' id='contact'>
+    <FooterStyle className={props.className} id='contact'>
       <span className='section-title'>Contact</span>
       <Form />
       <SocialBar />
