@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaBriefcase, FaCode, FaIdCardAlt } from 'react-icons/fa';
-import { NavStyle, LogoSpan, List } from './index.style';
-
+import { NavStyle, LogoSpan, List } from './Nav.style';
 
 const Nav = () => {
   return (
