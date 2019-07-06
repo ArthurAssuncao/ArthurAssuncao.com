@@ -5,7 +5,7 @@ import Project from '../../components/Project';
 import imgGloboHistorias from '../../assets/images/projects/globo-historias/thumbnail.jpg'
 import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbnail.jpeg'
 import imgArthurAssuncaoSiteOld from '../../assets/images/projects/arthurassuncao-com2016/thumbnail-0.jpg'
-import ProjectsStyle from './index.style';
+import ProjectsStyle from './Projects.style';
 
 const initialProject = 1;
 
