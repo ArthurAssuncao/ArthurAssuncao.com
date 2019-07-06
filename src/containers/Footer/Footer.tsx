@@ -1,8 +1,8 @@
 import React from 'react';
 import SocialBar from '../../components/social-bar';
 import ResumeButton from '../../components/resume-button';
-import Form from '../../components/form';
-import FooterStyle from './index.style';
+import Form from '../../components/Form';
+import FooterStyle from './Footer.style';
 
 const Footer = () => {
   return (

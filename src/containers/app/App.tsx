@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Footer from '../footer';
+import Footer from '../Footer';
 import Header from '../header';
 import HowDo from '../how-do';
 import Projects from '../Projects';
