@@ -53,10 +53,10 @@ const FormStyle = styled.div`
       font-weight: 300;
       font-size: 23px;
       color: ${props => props.theme.palette.neutral[0]};
-      background-color: ${props => props.theme.palette.primary[0]};
+      background-color: ${props => props.theme.palette.accent};
       text-align: center;
       transition: all 0.2s;
-      box-shadow: 0 0 5px 0 ${props => props.theme.palette.grayscale[1]};
+      box-shadow: 0 0 5px 0 ${props => props.theme.palette.grayscale.darkened};
     }
     .button-submit:hover{
       color: lightgray;
@@ -88,7 +88,7 @@ const FormStyle = styled.div`
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.45);
-      box-shadow: 0px 4px 20px 0px ${props => props.theme.palette.grayscale[1]};
+      box-shadow: 0px 4px 20px 0px ${props => props.theme.palette.grayscale.darkened};
     }
   }
 

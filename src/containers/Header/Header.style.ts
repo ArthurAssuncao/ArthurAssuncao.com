@@ -5,8 +5,8 @@ const HeaderStyle = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px;
-  background-color: ${props => props.theme.palette.primary[0]};
-  box-shadow: 0 0 5px 0 ${props => props.theme.palette.grayscale[1]};
+  background-color: ${props => props.theme.palette.primary};
+  box-shadow: 0 0 5px 0 ${props => props.theme.palette.grayscale.darkened};
   position: fixed;
   z-index: 11;
   width: 100%;

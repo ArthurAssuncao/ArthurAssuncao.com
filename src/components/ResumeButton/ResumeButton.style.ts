@@ -16,7 +16,7 @@ const ResumeButtonStyle = styled.div`
     margin-right: 2px;
   }
   .link {
-    color: ${props => props.theme.palette.primary[0]};
+    color: ${props => props.theme.palette.primary};
   }
 `;
 

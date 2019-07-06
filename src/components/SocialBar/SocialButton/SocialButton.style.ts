@@ -16,7 +16,7 @@ const SocialButtonStyle = styled.div`
   }
 
   a:hover{
-    color: ${props => props.theme.palette.primary[0]};
+    color: ${props => props.theme.palette.primary};
   }
 
   .social-name {

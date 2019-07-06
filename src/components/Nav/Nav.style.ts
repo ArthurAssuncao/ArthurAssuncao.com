@@ -34,8 +34,8 @@ const List = styled.ul`
 
     &:hover {
         cursor: pointer;
-        color: ${props => props.theme.palette.secondary.light[1]};
-        background-color: ${props => props.theme.palette.secondary.dark[1]};
+        color: ${props => props.theme.palette.secondary.lightened[1]};
+        background-color: ${props => props.theme.palette.secondary.darkened[1]};
     }
   }
 `;

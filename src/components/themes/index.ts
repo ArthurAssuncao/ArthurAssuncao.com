@@ -16,12 +16,13 @@ const theme = {
 
 // middle color is the right color
 theme.palette = {
-  // PANTONE 17-1564 TPX Fiesta, Charcoal, Honey Gold
-  primary: ['rgb(220, 68, 58)', 'rgb(54, 69, 79)', 'rgb(209, 160, 84)'],
+  // PANTONE 17-1564 TPX Fiesta
+  primary: 'rgb(220, 68, 58)',
+  accent: '#2CA842', //#DC883A, #257B87
   // PANTONE 17-1564 TPX Fiesta: light 1, light 2, dark 1 and dark 2
   secondary: {
-    light: ['#FF958C', '#EB675C'],
-    dark: ['#CA2619', '#AF1408']
+    lightened: ['#FF958C', '#EB675C'],
+    darkened: ['#CA2619', '#AF1408']
   },
   // pastel yellow, pastel blue, pastel green
   neutral: ['rgb(252,247,222)', 'rgb(222,243,253)', 'rgb(222,253,224)', 'rgb(255, 253, 208)'],
@@ -33,7 +34,12 @@ theme.palette = {
   success: 'rgb(222,253,224)',
   // pastel blue
   info: 'rgb(222,243,253)',
-  grayscale: ['#212121', '#616161', '#9e9e9e', '#bdbdbd', '#e0e0e0', '#f7f7f7', '#ffffff']
+  grayscale: {
+    lightened: '#f9fbfb',
+    // Charcoal
+    darkened: 'rgb(54, 69, 79)'
+  },
+  white: '#fff'
 }
 
 theme.fonts = {
