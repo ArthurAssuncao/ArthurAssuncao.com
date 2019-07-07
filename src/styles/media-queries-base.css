@@ -20,7 +20,7 @@ https://github.com/zellwk/mappy-breakpoints
 @custom-media --viewport-9 (min-width: 992px);
 @custom-media --viewport-12 (min-width: 1200px);
 @media (--viewport-4) {
-  // ... 
+  // ...
 }
 */
 
@@ -32,10 +32,10 @@ HTML {
 }
 
 body {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
-/* 
+/*
   ##Device = Mobile-portrait (and larger)
   ##Screen = B/w 0px to 479px
 */
@@ -43,45 +43,58 @@ body {
 
 }
 
-/* 
+/*
   ##Device = Low Resolution Tablets, Mobile-landscape (and larger)
   ##Screen = B/w 481px to 767px
-  // 480px / 16 = 30 (browser font-size default)
-  // 480px / 10 = 48 (propose browser font-size = 10)
 */
-@media (min-width: 48em) {
+@media (min-width: 480px) {
 
 }
 
-/* 
+/*
   ##Device = 	Ipad and Tablet-portrait (and larger)
   ##Screen = B/w 768px to 991px
-  // 768px / 16 = 48 (browser font-size default)
-  // 768px / 10 = 76.8 (propose browser font-size = 10)
 */
-@media (min-width: 76.8em), (max-device-width: 48em) and (orientation: portrait) {
+@media (min-width: 768px), (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
 
 }
 
-/* 
+/*
   ##Device = 	Ipad and Tablet-landscape (and larger)
   ##Screen = B/w 992px to 1199px
-  // 992 / 16 = 62 (browser font-size default)
-  // 992 / 10 = 99.2 (propose browser font-size = 10)
-  // 640 / 16 = 40 (browser font-size default)
-  // 640 / 10 = 64 (propose browser font-size = 10)
 */
-@media (min-width: 99.2em) and (orientation: landscape), (max-device-width: 64em) and (orientation: landscape) {
+@media (min-width: 992px) and (orientation: landscape),(min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
 
 }
 
-/* 
+/*
   ##Device = Laptops, Desktops (and langer)
   ##Screen = B/w 1200px to higher resolution desktops
-  // 1200 / 16 = 75 (browser font-size default)
-  // 1200 / 10 = 120 (propose browser font-size = 10)
 */
 
-@media (min-width: 120em) {
+@media (min-width: 1200px) {
+
+}
+
+/*
+Without comments
+*/
+@media (min-width: 0em) {
+
+}
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 768px), (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 992px) and (orientation: landscape), (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
+
+}
+
+@media (min-width: 1200px) {
 
 }

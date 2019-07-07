@@ -7,7 +7,7 @@ import FooterStyle from './Footer.style';
 const Footer = (props: any) => {
   return (
     <FooterStyle className={props.className} id='contact'>
-      <span className='section-title'>Contact</span>
+      <span className={props.sectionClassName}>Contact</span>
       <Form />
       <SocialBar />
       <ResumeButton />

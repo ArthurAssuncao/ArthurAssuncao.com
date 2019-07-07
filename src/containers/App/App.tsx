@@ -15,9 +15,9 @@ const App = () => {
         <Header className='header' />
         <main className='main'>
           <HowDo />
-          <Projects />
+          <Projects sectionClassName='section-title' />
         </main>
-        <Footer className='footer' />
+        <Footer className='footer' sectionClassName='section-title' />
       </AppStyle>
     </>
   );

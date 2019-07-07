@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 1.6rem;
   }
 
   code {

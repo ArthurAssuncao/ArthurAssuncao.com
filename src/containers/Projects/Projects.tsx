@@ -9,7 +9,7 @@ import ProjectsStyle from './Projects.style';
 
 const initialProject = 1;
 
-const Projects = () => {
+const Projects = (props: any) => {
   const [currentProject, setCurrentProject] = useState(initialProject);
 
   const HandlerProject = (e: any) => {
@@ -19,7 +19,7 @@ const Projects = () => {
 
   return (
     <ProjectsStyle id="projects">
-      <span className='section-title'>Projects</span>
+      <span className={props.sectionClassName}>Projects</span>
       <Carousel
         showThumbs={false}
         showStatus={false}

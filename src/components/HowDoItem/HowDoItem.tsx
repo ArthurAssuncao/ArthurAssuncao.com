@@ -7,7 +7,7 @@ const howDoItemDefaultProps = {
 }
 
 const howDoItemPropTypes = {
-  children: PropTypes.element,
+  children: PropTypes.element.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   childrenPosition: PropTypes.string
@@ -28,17 +28,17 @@ type HowDoItemProps = InferPropTypes<typeof howDoItemPropTypes, typeof howDoItem
 const HowDoItem = (props: HowDoItemProps) => {
   return (
     <HowDoItemStyle>
-      {(props.childrenPosition === "first") ? props.children : ''}
+      {(props.childrenPosition === "first") ? <div className='img-container'>{props.children}</div> : ''}
       <div>
-        <h1>
+        <h1 className='howDoItem-title'>
           {props.title}
         </h1>
-        <span className='how-do-item-description'>
+        <span className='howDoItem-description'>
           {props.description}
         </span>
       </div>
-      {(props.childrenPosition === "last") ? props.children : ''}
-    </HowDoItemStyle>
+      {(props.childrenPosition === "last") ? <div className='img-container'>{props.children}</div> : ''}
+    </HowDoItemStyle >
   );
 }
 
