@@ -53,7 +53,7 @@ theme.sizes = {
   maxWidth: '1100px',
   font: '15px',
   headerHeight: '70px',
-  footerHeight: '540px'
+  footerHeight: '650px'
 }
 
 export type ThemeType = typeof theme;
