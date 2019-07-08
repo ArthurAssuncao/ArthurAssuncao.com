@@ -9,7 +9,7 @@ const HeaderStyle = styled.header`
   box-shadow: 0 0 5px 0 ${props => props.theme.palette.grayscale.darkened};
   position: fixed;
   z-index: 11;
-  width: 100%;
+  width: calc(100vw - 60px);
   height: ${props => props.theme.sizes.headerHeight};
 `;
 

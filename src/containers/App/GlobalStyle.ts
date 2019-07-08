@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   html {
     font-size: 10px;
     background-color: ${({ theme }) => theme.palette.neutral[0]};
+    margin: 0 auto;
   }
 
   body {
