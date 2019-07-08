@@ -50,7 +50,6 @@ const List = styled.ul`
     vertical-align: middle;
     font-size: 2rem;
     color: ${props => props.theme.palette.neutral[0]};
-    padding-right: 50px;
     text-align: center;
   }
 
