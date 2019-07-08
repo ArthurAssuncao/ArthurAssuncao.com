@@ -4,7 +4,7 @@ import FormStyle from './Form.style';
 
 const Form = () => {
   return (
-    <FormStyle>
+    <FormStyle name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
       <label className='form-name field'>
         <span><FaUserCircle /> Your Name</span>
         <input type="text" name="name" placeholder="Name" />
@@ -17,6 +17,7 @@ const Form = () => {
         <span><FaPen /> Message</span>
         <textarea name="message" placeholder='Write your message'></textarea>
       </label>
+      <div data-netlify-recaptcha="true"></div>
       <div className='form-submit'>
         <button type="button" className='button-submit' data-id="form-submit" aria-label="Send">
           <span>Send <FaPaperPlane /></span>

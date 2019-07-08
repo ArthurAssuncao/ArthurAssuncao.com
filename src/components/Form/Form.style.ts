@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const FormStyle = styled.div`
+const FormStyle = styled.form`
   @media (min-width: 0px) {
     display: grid;
     grid-template-areas:
