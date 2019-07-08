@@ -25,10 +25,10 @@ https://github.com/zellwk/mappy-breakpoints
 */
 
 /* REMEMBER
-Set font-size: 10 in HTML element
+Set font-size: 10px in HTML element
 Set font-size: 1.6em in Body */
 HTML {
-  font-size: 10;
+  font-size: 10px;
 }
 
 body {
@@ -39,7 +39,7 @@ body {
   ##Device = Mobile-portrait (and larger)
   ##Screen = B/w 0px to 479px
 */
-@media (min-width: 0em) {
+@media (min-width: 0px) {
 
 }
 
@@ -63,7 +63,7 @@ body {
   ##Device = 	Ipad and Tablet-landscape (and larger)
   ##Screen = B/w 992px to 1199px
 */
-@media (min-width: 992px) and (orientation: landscape),(min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
+@media (min-width: 992px),(min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
 
 }
 
@@ -79,7 +79,7 @@ body {
 /*
 Without comments
 */
-@media (min-width: 0em) {
+@media (min-width: 0px) {
 
 }
 
@@ -91,7 +91,7 @@ Without comments
 
 }
 
-@media (min-width: 992px) and (orientation: landscape), (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
+@media (min-width: 992px), (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
 
 }
 

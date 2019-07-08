@@ -77,7 +77,7 @@ const HowDoItemStyle = styled.div`
     }
   }
 
-  @media (min-width: 992px) and (orientation: landscape), (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
+  @media (min-width: 992px), (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
     max-width: 80vw;
   }
 

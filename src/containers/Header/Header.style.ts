@@ -4,7 +4,7 @@ const HeaderStyle = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 50px;
+  padding: 0px 30px;
   background-color: ${props => props.theme.palette.primary};
   box-shadow: 0 0 5px 0 ${props => props.theme.palette.grayscale.darkened};
   position: fixed;
