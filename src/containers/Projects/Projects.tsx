@@ -11,6 +11,7 @@ const initialProject = 1;
 
 const Projects = (props: any) => {
   const [currentProject, setCurrentProject] = useState(initialProject);
+  const centerMode = true;
 
   const HandlerProject = (e: any) => {
     console.log(e);
@@ -31,7 +32,7 @@ const Projects = (props: any) => {
         transitionTime={300}
         // interval={1200}
         emulateTouch={false}
-        centerMode
+        centerMode={centerMode}
         centerSlidePercentage={25}
         selectedItem={initialProject}
         onChange={HandlerProject}
