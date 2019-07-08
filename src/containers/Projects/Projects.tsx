@@ -67,7 +67,7 @@ const Projects = (props: any) => {
         <Project
           id={2}
           name={'Biblioteka App'}
-          imgUrl={'http://armandoassuncao.github.io/static/img/portfolio/biblioteka/thumbnail.jpeg'}
+          imgUrl={'https://armandoassuncao.com/static/img/portfolio/biblioteka/thumbnail.jpeg'}
           description={`Aplicativo criado com o objetivo de melhorar a utilização da biblioteca do IF Sudeste MG - Campus Barbacena.
 
           Fui colaborador do projeto de autoria do Armando Assunção.

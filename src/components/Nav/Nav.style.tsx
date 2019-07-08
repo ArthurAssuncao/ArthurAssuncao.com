@@ -117,9 +117,9 @@ const ListItemStyle = styled.li`
 const ListItem = (props: any) => {
   return (
     <ListItemStyle>
-      <a href={props.url}>
+      <a href={props.url} aria-labelledby={`${props.url}_text`}>
         <span className="icon">{props.children}</span>
-        <span className="text"> {props.text}</span>
+        <span className="text" id={`${props.url}_text`}> {props.text}</span>
       </a>
     </ListItemStyle>
   );

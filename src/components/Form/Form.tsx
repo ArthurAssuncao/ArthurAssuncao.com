@@ -19,7 +19,7 @@ const Form = () => {
       </label>
       <div data-netlify-recaptcha="true"></div>
       <div className='form-submit'>
-        <button type="button" className='button-submit' data-id="form-submit" aria-label="Send">
+        <button type="button" className='button-submit' data-id="form-submit" aria-label="Send Message">
           <span>Send <FaPaperPlane /></span>
         </button>
       </div>
