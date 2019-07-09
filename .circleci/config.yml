@@ -20,13 +20,12 @@ commands:
       - run:
           name: React Build
           command: yarn build
+  install-netlify:
+    steps:
+      - run:
+          name: install netlify cli
+          command: sudo npm install netlify-cli -g
 jobs:
-  # install-netlify:
-  #   executor: node-executor
-  #   steps:
-  #     - run:
-  #         name: install netlify cli
-  #         command: sudo npm install netlify-cli -g
   build:
     executor: node-executor
     steps:
