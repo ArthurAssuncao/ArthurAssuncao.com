@@ -1,9 +1,7 @@
 # ArthurAssuncao.com
 ## Version 2019
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/38daf41b-83b7-40f8-9c05-ba5b85189f5a/deploy-status)](https://app.netlify.com/sites/arthurassuncao/deploys)
-
-[![CircleCI](https://circleci.com/gh/ArthurAssuncao/ArthurAssuncao.com.svg?style=svg)](https://circleci.com/gh/ArthurAssuncao/ArthurAssuncao.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/38daf41b-83b7-40f8-9c05-ba5b85189f5a/deploy-status)](https://app.netlify.com/sites/arthurassuncao/deploys) [![CircleCI](https://circleci.com/gh/ArthurAssuncao/ArthurAssuncao.com.svg?style=svg)](https://circleci.com/gh/ArthurAssuncao/ArthurAssuncao.com) [![Coverage Status](https://coveralls.io/repos/github/ArthurAssuncao/ArthurAssuncao.com/badge.svg?branch=master)](https://coveralls.io/github/ArthurAssuncao/ArthurAssuncao.com?branch=master)
 
 ### Features
 
