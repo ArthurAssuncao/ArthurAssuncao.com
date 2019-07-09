@@ -53,7 +53,7 @@ jobs:
       - install-netlify
       - run:
           name: Netlify Deploy
-          command: netlify deploy --prod --dir=build/
+          command: netlify deploy --prod --dir=build -p
 workflows:
   version: 2
   build-deploy:
