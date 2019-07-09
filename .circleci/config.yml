@@ -51,7 +51,7 @@ jobs:
     executor: node-executor
     working_directory: ~/tmp/ArthurAssuncao.com
     steps:
-      install-netlify
+      - install-netlify
       - run:
           name: Netlify Deploy
           command: netlify deploy --prod --dir=public
