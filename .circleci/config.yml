@@ -20,25 +20,8 @@ commands:
       - run:
           name: React Build
           command: yarn build
-workflows:
-  version: 2
-  build-deploy:
-    jobs:
-      # - build:
-      #     filters:
-      #       branches:
-      #         only:
-      #           - staging
-      # - test:
-      #     requires:
-      #       - build
-      - release:
-          filters:
-            branches:
-              only:
-                - master
 jobs:
-  # build:
+  # deploy-stage:
   #   executor: node-executor
   #   working_directory: ~/ArthurAssuncao.com
   #   steps:
@@ -54,11 +37,28 @@ jobs:
   #     - run:
   #         name: Test
   #         command: yarn test
-  release:
+  deploy-prod:
     executor: node-executor
-    working_directory: ~/ArthurAssuncao.com
+    working_directory: ~/tmp/ArthurAssuncao.com
     steps:
-      - react-build
       - run:
           name: Netlify Deploy
           command: ./node_modules/.bin/netlify deploy --prod --dir=public
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      # - build:
+      #     filters:
+      #       branches:
+      #         only:
+      #           - staging
+      # - test:
+      #     requires:
+      #       - build
+      - deploy-prod:
+          requires:
+            - react-build
+          filters:
+            branches:
+              only: master
