@@ -52,11 +52,12 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      # - build:
-      #     filters:
-      #       branches:
-      #         only:
-      #           - staging
+      - build:
+          filters:
+            branches:
+              ignore:
+                - develop
+                - /feature-.*/
       # - test:
       #     requires:
       #       - build
