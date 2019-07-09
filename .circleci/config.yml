@@ -21,6 +21,10 @@ commands:
           name: React Build
           command: yarn build
 jobs:
+  build:
+    executor: node-executor
+    steps:
+      - react-build
   # deploy-stage:
   #   executor: node-executor
   #   working_directory: ~/ArthurAssuncao.com
@@ -58,7 +62,7 @@ workflows:
       #       - build
       - deploy-prod:
           requires:
-            - react-build
+            - build
           filters:
             branches:
               only: master
