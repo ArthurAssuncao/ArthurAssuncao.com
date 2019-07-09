@@ -21,12 +21,12 @@ commands:
           name: React Build
           command: yarn build
 jobs:
-  install-netlify:
-    executor: node-executor
-    steps:
-      - run:
-          name: install netlify cli
-          command: sudo npm install netlify-cli -g
+  # install-netlify:
+  #   executor: node-executor
+  #   steps:
+  #     - run:
+  #         name: install netlify cli
+  #         command: sudo npm install netlify-cli -g
   build:
     executor: node-executor
     steps:
@@ -51,6 +51,7 @@ jobs:
     executor: node-executor
     working_directory: ~/tmp/ArthurAssuncao.com
     steps:
+      install-netlify
       - run:
           name: Netlify Deploy
           command: netlify deploy --prod --dir=public
@@ -58,12 +59,12 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - install-netlify:
-          filters:
-            branches:
-              ignore:
-                - develop
-                - /feature-.*/
+      # - install-netlify:
+      #     filters:
+      #       branches:
+      #         ignore:
+      #           - develop
+      #           - /feature-.*/
       - build:
           filters:
             branches:
@@ -75,7 +76,6 @@ workflows:
       #       - build
       - deploy-prod:
           requires:
-            - install-netlify
             - build
           filters:
             branches:
