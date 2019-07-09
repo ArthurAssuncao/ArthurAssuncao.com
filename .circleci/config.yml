@@ -57,7 +57,7 @@ jobs:
       - install-netlify
       - run:
           name: Netlify Deploy
-          command: netlify deploy --prod
+          command: netlify deploy --prod --dir=public
 workflows:
   version: 2
   build-deploy:
