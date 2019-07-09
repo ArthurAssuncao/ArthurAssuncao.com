@@ -31,7 +31,7 @@ jobs:
     steps:
       - react-build
       - persist_to_workspace:
-          root: /home/circleci/tmp/ArthurAssuncao.com/public
+          root: ~/tmp/ArthurAssuncao.com/
           paths:
             - public
   # deploy-stage:
@@ -55,11 +55,11 @@ jobs:
     working_directory: ~/tmp/ArthurAssuncao.com
     steps:
       - attach_workspace:
-          at: /home/circleci/tmp/ArthurAssuncao.com/
+          at: ~/tmp/ArthurAssuncao.com/
       - install-netlify
       - run:
           name: Netlify Deploy
-          command: netlify deploy --prod --dir=/home/circleci/tmp/ArthurAssuncao.com/public
+          command: netlify deploy --prod --dir=~/tmp/ArthurAssuncao.com/public
 workflows:
   version: 2
   build-deploy:
