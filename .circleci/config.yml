@@ -30,10 +30,10 @@ jobs:
     executor: node-executor
     steps:
       - react-build
-    - persist_to_workspace:
-        root: ./
-        paths:
-          - public
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - public
   # deploy-stage:
   #   executor: node-executor
   #   working_directory: ~/ArthurAssuncao.com
