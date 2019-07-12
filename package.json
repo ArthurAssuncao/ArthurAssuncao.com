@@ -48,6 +48,6 @@
     "styled-components": "^5.0.0-beta.8",
     "styled-reset": "^2.0.16",
     "stylis": "^3.5.4",
-    "typescript": "^3.5.2"
+    "typescript": "^3.5.3"
   }
 }
