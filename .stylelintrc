@@ -1,7 +1,6 @@
 {
   "extends": "stylelint-config-recommended-scss",
   "rules": {
-    "indentation": "space",
     "indentation": 2,
     "string-quotes": "single",
     "no-duplicate-selectors": true,
