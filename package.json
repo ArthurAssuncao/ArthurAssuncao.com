@@ -37,7 +37,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
     "@types/styled-components": "^4.1.16",
-    "coveralls": "^3.0.4",
+    "coveralls": "^3.0.5",
     "netlify": "^2.4.6",
     "netlify-cli": "^2.11.23",
     "prop-types": "^15.7.2",
