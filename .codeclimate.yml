@@ -1,0 +1,22 @@
+plugins:
+  editorconfig:
+    enabled: true
+    channel: beta
+    config:
+      editorconfig: .editorconfig
+  git-legal:
+   enabled: true
+    config:
+      allow_affero_copyleft: false
+      allow_strong_copyleft: false
+  haml-lint:
+    enabled: true
+  markdownlint:
+    enabled: true
+  stylelint:
+    enabled: true
+  eslint:
+    enabled: true
+  tslint:
+    enabled: true
+    config: tslint.json
