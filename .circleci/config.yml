@@ -2,7 +2,7 @@ version: 2.1
 executors:
   node-executor:
     docker:
-      - image: circleci/node:8.10.0
+      - image: circleci/node:10
 commands:
   react-build:
     steps:
@@ -76,6 +76,7 @@ workflows:
               ignore:
                 - develop
                 - /feature-.*/
+                - /dependabot*/
       # - test:
       #     requires:
       #       - build
