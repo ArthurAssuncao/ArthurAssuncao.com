@@ -6,6 +6,15 @@
         120
       ]
     },
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": [
+      true,
+      "always",
+      "ignore-interfaces"
+    ],
     "new-parens": true,
     "no-arg": true,
     "no-bitwise": true,

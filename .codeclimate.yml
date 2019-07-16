@@ -9,6 +9,7 @@ plugins:
     config:
       allow_affero_copyleft: false
       allow_strong_copyleft: false
+      allow_unknown_libraries: true
   haml-lint:
     enabled: true
   markdownlint:
@@ -18,5 +19,5 @@ plugins:
   eslint:
     enabled: true
   tslint:
-    enabled: true
+    enabled: false
     config: tslint.json

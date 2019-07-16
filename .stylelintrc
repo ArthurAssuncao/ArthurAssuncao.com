@@ -21,7 +21,7 @@
     "comment-whitespace-inside": "always",
     "media-feature-range-operator-space-before": "always",
     "media-feature-range-operator-space-after": "always",
-    "media-feature-colon-space-before": "always",
+    "media-feature-colon-space-before": null,
     "media-feature-colon-space-after": "always"
   }
 }
