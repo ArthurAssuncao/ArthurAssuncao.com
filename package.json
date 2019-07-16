@@ -18,6 +18,7 @@
     "build-sw": "node ./src/sw-build.js",
     "clean-cra-sw": "rm -f build/precache-manifest.*.js && rm -f build/service-worker.js"
   },
+  "pre-commit": [],
   "eslintConfig": {
     "extends": "react-app"
   },
