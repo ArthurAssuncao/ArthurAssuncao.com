@@ -23,8 +23,8 @@ trim_trailing_whitespace = false
 
 # codeclimate verifies pdf and others unnecessary file extensions
 [*.{pdf, ico, png, jpg, jpeg}]
-indent_style = none
-indent_size = none
-end_of_line = none
-trim_trailing_whitespace = none
-charset = none
+indent_style = unset
+indent_size = unset
+end_of_line = unset
+trim_trailing_whitespace = unset
+charset = unset
