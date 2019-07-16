@@ -10,6 +10,6 @@ const ResumeButton = () => {
       Baixar meu <a href='{ resume }' className='link'>&nbsp;Currículo</a>
     </ResumeButtonStyle>
   );
-}
+};
 
 export default ResumeButton;

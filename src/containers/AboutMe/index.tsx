@@ -6,9 +6,19 @@ import AboutMeStyle from './index.style';
 const AboutMe = () => {
   return (
     <AboutMeStyle>
+      <FaPython />
+      <FaReact />
+      <FaJsSquare />
+      <FaGithub />
+      <FaHtml5 />
+      <FaCss3Alt />
+      <FaTrello />
+      <FaLinux />
+      <FaYarn />
+      <FaNpm />
     </AboutMeStyle>
   );
-}
+};
 
 export default AboutMe;
 

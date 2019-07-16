@@ -8,6 +8,6 @@ const Header = (props: any) => {
       <Nav />
     </HeaderStyle>
   );
-}
+};
 
 export default Header;

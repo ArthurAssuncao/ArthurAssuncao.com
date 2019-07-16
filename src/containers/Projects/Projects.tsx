@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Project from '../../components/Project';
-import imgGloboHistorias from '../../assets/images/projects/globo-historias/thumbnail.jpg'
-import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbnail.jpeg'
-import imgArthurAssuncaoSiteOld from '../../assets/images/projects/arthurassuncao-com2016/thumbnail-0.jpg'
+import imgGloboHistorias from '../../assets/images/projects/globo-historias/thumbnail.jpg';
+import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbnail.jpeg';
+import imgArthurAssuncaoSiteOld from '../../assets/images/projects/arthurassuncao-com2016/thumbnail-0.jpg';
 import ProjectsStyle from './Projects.style';
 
 const initialProject = 1;
@@ -16,7 +16,7 @@ const Projects = (props: any) => {
   const HandlerProject = (e: any) => {
     console.log(e);
     setCurrentProject(e);
-  }
+  };
 
   return (
     <ProjectsStyle id="projects">
@@ -115,6 +115,6 @@ const Projects = (props: any) => {
       </Carousel>
     </ProjectsStyle>
   );
-}
+};
 
 export default Projects;

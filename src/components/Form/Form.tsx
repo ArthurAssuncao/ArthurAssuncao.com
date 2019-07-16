@@ -25,6 +25,6 @@ const Form = () => {
       </div>
     </FormStyle>
   );
-}
+};
 
 export default Form;

@@ -30,6 +30,6 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     text-decoration: none;
     color: white;
   }
-`
+`;
 
 export default GlobalStyle;

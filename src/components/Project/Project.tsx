@@ -9,14 +9,14 @@ const projectPropTypes = {
   description: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   showLegend: PropTypes.bool.isRequired
-}
+};
 
 const projectDefaultProps = {
   name: 'Project',
   imgUrl: 'https://via.placeholder.com/300x170',
   description: 'No description',
   url: '#'
-}
+};
 
 type InferPropTypes<
   PropTypes,
@@ -42,7 +42,7 @@ const Project = (props: ProjectProps) => {
       {/* <p className={ props.showLegend ? 'legend': 'legend hidden' }>{ props.description }</p> */}
     </ProjectStyle>
   );
-}
+};
 
 Project.defaultProps = projectDefaultProps;
 
