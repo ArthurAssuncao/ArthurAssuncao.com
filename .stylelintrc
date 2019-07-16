@@ -1,5 +1,11 @@
 {
-  "extends": "stylelint-config-recommended-scss",
+  "processors": ["stylelint-processor-styled-components"],
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-styled-components"
+  ],
+  "parser": "typescript-eslint-parser",
+  "syntax": "scss",
   "rules": {
     "indentation": 2,
     "string-quotes": "single",

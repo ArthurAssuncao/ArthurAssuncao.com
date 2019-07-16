@@ -16,10 +16,10 @@
 ### Technologies
 
 - Front-end
-  - HTML5
-  - CSS3
-  - TypeScript
-  - ReactJS
+    - HTML5
+    - CSS3
+    - TypeScript
+    - ReactJS
 
 #### Main React Packages
 

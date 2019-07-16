@@ -16,7 +16,12 @@
     "eject": "react-scripts eject",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "build-sw": "node ./src/sw-build.js",
-    "clean-cra-sw": "rm -f build/precache-manifest.*.js && rm -f build/service-worker.js"
+    "clean-cra-sw": "rm -f build/precache-manifest.*.js & rm -f build/service-worker.js",
+    "lint": "yarn run lint:md & yarn run lint:stylelint & yarn run lint:eslint",
+    "lint:fix": "yarn run lint:md --fix & yarn run lint:stylelint --fix & yarn run lint:eslint --fix",
+    "lint:eslint": "eslint ./src --ext .js,.ts,.tsx",
+    "lint:stylelint": "stylelint './src/*{.css,.scss,.tsx}' --syntax scss",
+    "lint:md": "markdownlint ./ --ignore node_modules --ignore build"
   },
   "pre-commit": [],
   "eslintConfig": {
@@ -43,6 +48,7 @@
     "@types/react-helmet": "^5.0.8",
     "@types/styled-components": "^4.1.18",
     "coveralls": "^3.0.5",
+    "eslint-config-react-app": "^4.0.1",
     "markdownlint": "^0.15.0",
     "markdownlint-cli": "^0.17.0",
     "netlify": "^2.4.6",
@@ -57,9 +63,12 @@
     "styled-reset": "^3.0.0",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
     "stylelint-scss": "^3.9.1",
     "stylis": "^3.5.4",
     "typescript": "^3.5.3",
+    "typescript-eslint-parser": "^22.0.0",
     "workbox-build": "^4.3.1",
     "workbox-cli": "^4.3.1"
   }

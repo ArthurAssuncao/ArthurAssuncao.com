@@ -17,6 +17,11 @@
   "eslint.options": {
     "configFile": ".eslintrc"
   },
+  "markdownlint.ignore": [
+    "node_modules",
+    "build"
+  ],
+  "markdownlint.run": "onSave",
   "workbench.colorCustomizations": {
     "tab.unfocusedActiveBorder": "#fff0",
     "tab.hoverBorder": "#00ffff",

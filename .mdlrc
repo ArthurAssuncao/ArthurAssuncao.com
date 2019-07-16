@@ -1,6 +1,0 @@
-// Markdown Lint Rules
-// https://github.com/mivok/markdownlint/blob/master/docs/RULES.md
-
-exclude_rule
-  'MD024'
-  'MD013'
