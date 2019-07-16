@@ -30,6 +30,6 @@ const App = () => {
       </AppStyle>
     </>
   );
-}
+};
 
 export default App;

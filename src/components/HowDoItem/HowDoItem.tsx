@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import HowDoItemStyle from './HowDoItem.style'
+import HowDoItemStyle from './HowDoItem.style';
 
 const howDoItemDefaultProps = {
-  childrenPosition: "last"
-}
+  childrenPosition: 'last'
+};
 
 const howDoItemPropTypes = {
   children: PropTypes.element.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   childrenPosition: PropTypes.string
-}
+};
 
 type InferPropTypes<
   PropTypes,
@@ -28,7 +28,7 @@ type HowDoItemProps = InferPropTypes<typeof howDoItemPropTypes, typeof howDoItem
 const HowDoItem = (props: HowDoItemProps) => {
   return (
     <HowDoItemStyle>
-      {(props.childrenPosition === "first") ? <div className='img-container'>{props.children}</div> : ''}
+      {(props.childrenPosition === 'first') ? <div className='img-container'>{props.children}</div> : ''}
       <div>
         <h1 className='howDoItem-title'>
           {props.title}
@@ -37,10 +37,10 @@ const HowDoItem = (props: HowDoItemProps) => {
           {props.description}
         </span>
       </div>
-      {(props.childrenPosition === "last") ? <div className='img-container'>{props.children}</div> : ''}
+      {(props.childrenPosition === 'last') ? <div className='img-container'>{props.children}</div> : ''}
     </HowDoItemStyle >
   );
-}
+};
 
 HowDoItem.defaultProps = howDoItemDefaultProps;
 

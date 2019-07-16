@@ -13,6 +13,6 @@ const Footer = (props: any) => {
       <ResumeButton />
     </FooterStyle>
   );
-}
+};
 
 export default Footer;

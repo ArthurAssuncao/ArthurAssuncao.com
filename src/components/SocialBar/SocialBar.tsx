@@ -32,6 +32,6 @@ const SocialBar = () => {
       </SocialButton>
     </SocialBarStyle>
   );
-}
+};
 
 export default SocialBar;

@@ -1,12 +1,19 @@
 {
-  "extends": "eslint:recommended",
+  "extends": "react-app",
   "root": true,
+  "parserOptions": {
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true
+    }
+  },
   "rules": {
     // enable additional rules
     "indent": [
       "error",
       2
     ],
+    "no-spaced-func": 2,
     "linebreak-style": [
       "error",
       "unix"
@@ -16,17 +23,13 @@
       "single"
     ],
     "semi": [
-      "error",
+      2,
       "always",
       {
         "omitLastInOneLineBlock": true
       }
     ],
-    // override default options for rules from base configurations
-    "comma-dangle": [
-      "error",
-      "always"
-    ],
+    "no-extra-semi": 2,
     "no-cond-assign": [
       "error",
       "always"

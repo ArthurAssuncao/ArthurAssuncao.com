@@ -123,7 +123,7 @@ const ListItem = (props: any) => {
       </a>
     </ListItemStyle>
   );
-}
+};
 
 export { NavStyle, LogoSpan, List, ListItem };
 export default NavStyle;

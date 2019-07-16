@@ -35,6 +35,6 @@ const HowDo = () => {
       </HowDoItem>
     </HowDoStyle>
   );
-}
+};
 
 export default HowDo;

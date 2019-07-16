@@ -10,6 +10,6 @@ const SocialButton = (props: any) => {
       </a>
     </SocialButtonStyle>
   );
-}
+};
 
 export default SocialButton;

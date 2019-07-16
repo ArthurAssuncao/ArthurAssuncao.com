@@ -13,6 +13,6 @@ const Nav = () => {
       </List>
     </NavStyle>
   );
-}
+};
 
 export default Nav;
