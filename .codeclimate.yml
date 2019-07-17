@@ -1,4 +1,4 @@
-version: "2.2"
+version: "2.2.1"
 exclude_patterns:
   - "config/"
   - "db/"
