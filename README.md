@@ -15,7 +15,7 @@
 
 ### Technologies
 
-    - Front-end
+- Front-end
     - HTML5
     - CSS3
     - TypeScript
