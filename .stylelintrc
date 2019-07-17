@@ -11,7 +11,7 @@
     "string-quotes": "single",
     "no-duplicate-selectors": true,
     "block-no-empty": null,
-    "unit-whitelist": ["px", "rem", "s"],
+    "unit-whitelist": ["px", "rem", "vw", "vh", "vmin", "vmax", "ex", "ch"],
     "max-empty-lines": 2,
     "color-hex-case": "upper",
     "selector-max-id": 0,

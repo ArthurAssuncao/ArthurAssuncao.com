@@ -37,7 +37,7 @@ const Project = (props: ProjectProps) => {
         <h1>
           {props.name}
         </h1>
-        <img alt='' src={props.imgUrl} />
+        <img alt={props.name} src={props.imgUrl} />
       </div>
       {/* <p className={ props.showLegend ? 'legend': 'legend hidden' }>{ props.description }</p> */}
     </ProjectStyle>

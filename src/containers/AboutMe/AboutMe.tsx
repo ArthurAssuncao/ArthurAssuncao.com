@@ -1,21 +1,17 @@
-
 import React from 'react';
-import { FaPython, FaReact, FaJsSquare, FaGithub, FaHtml5, FaCss3Alt, FaTrello, FaLinux, FaYarn, FaNpm } from 'react-icons/fa';
-import AboutMeStyle from './index.style';
+import AboutMeStyle from './AboutMe.style';
+import Me from '../../components/Me';
+import imgMe from '../../assets/images/me256x256.png';
+
+const description = `Hi, I am Professor of Computing at IF Sudeste MG, located in Brazil, and Master in Computer Science. I am currently studying React and Front End in general and Ruby on Rails.
+I participated in Hackathons, as the 2nd Hackathon of the Rede Globo and Google Developer Groups Sudeste BH 2015. This last we won!
+Still, I was an organizer and mentor in the Hackathon IF Inteligente 2019 of the IF Sudeste MG.`;
 
 const AboutMe = () => {
   return (
-    <AboutMeStyle>
-      <FaPython />
-      <FaReact />
-      <FaJsSquare />
-      <FaGithub />
-      <FaHtml5 />
-      <FaCss3Alt />
-      <FaTrello />
-      <FaLinux />
-      <FaYarn />
-      <FaNpm />
+    <AboutMeStyle id='about-me'>
+      <Me imgUrl={imgMe} description={description} />
+
     </AboutMeStyle>
   );
 };
