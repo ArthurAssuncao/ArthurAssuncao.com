@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaAngellist } from 'react-icons/fa';
+import { FaGithubSquare, FaLinkedin, FaAngellist } from 'react-icons/fa';
 import SocialBarStyle from './SocialBar.style';
 import SocialButton from './SocialButton';
 
@@ -7,10 +7,10 @@ const SocialBar = () => {
   return (
     <SocialBarStyle className='social'>
       <SocialButton
-        name='Facebook'
-        perfilUrl='https://www.facebook.com/arthurassuncao'
+        name='Lattes'
+        perfilUrl='http://lattes.cnpq.br/8136835668168874'
       >
-        <FaFacebookSquare className='icon' />
+        <i className='ai ai-lattes-square icon'></i>
       </SocialButton>
       <SocialButton
         name='Github'
