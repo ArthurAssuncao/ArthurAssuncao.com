@@ -30,7 +30,7 @@ plugins:
   markdownlint:
     enabled: true
   stylelint:
-    enabled: true
+    enabled: false
   eslint:
     enabled: true
   tslint:
