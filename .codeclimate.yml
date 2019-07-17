@@ -1,3 +1,18 @@
+version: "2"
+exclude_patterns:
+  - "config/"
+  - "db/"
+  - "dist/"
+  - "features/"
+  - "**/node_modules/"
+  - "build/"
+  - ".[!.]*"
+  - ".png"
+  - ".pdf"
+  - ".gif"
+  - ".jpeg"
+  - ".jpg"
+  - ".svg"
 plugins:
   editorconfig:
     enabled: true
