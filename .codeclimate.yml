@@ -15,12 +15,12 @@ exclude_patterns:
   - ".svg"
 plugins:
   editorconfig:
-    enabled: true
+    enabled: false
     channel: beta
     config:
       editorconfig: .editorconfig
   git-legal:
-    enabled: true
+    enabled: false
     config:
       allow_affero_copyleft: false
       allow_strong_copyleft: false
