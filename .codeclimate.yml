@@ -1,11 +1,26 @@
+version: "2.2.1"
+exclude_patterns:
+  - "config/"
+  - "db/"
+  - "dist/"
+  - "features/"
+  - "**/node_modules/"
+  - "build/"
+  - ".[!.]*"
+  - ".png"
+  - ".pdf"
+  - ".gif"
+  - ".jpeg"
+  - ".jpg"
+  - ".svg"
 plugins:
   editorconfig:
-    enabled: true
+    enabled: false
     channel: beta
     config:
       editorconfig: .editorconfig
   git-legal:
-    enabled: true
+    enabled: false
     config:
       allow_affero_copyleft: false
       allow_strong_copyleft: false

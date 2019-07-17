@@ -22,9 +22,12 @@ indent_size = 4
 trim_trailing_whitespace = false
 
 # codeclimate verifies pdf and others unnecessary file extensions
-[*.{pdf, ico, png, jpg, jpeg}]
-indent_style = none
-indent_size = none
-end_of_line = none
-trim_trailing_whitespace = none
-charset = none
+[*.{pdf,ico,png,jpg,jpeg,svg}]
+indent_style = unset
+indent_size = unset
+end_of_line = unset
+trim_trailing_whitespace = unset
+indent_size = unset
+insert_final_newline = unset
+tab_width = unset
+max_line_length = unset
