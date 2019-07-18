@@ -20,7 +20,7 @@
     "lint": "yarn run lint:md & yarn run lint:stylelint & yarn run lint:eslint",
     "lint:fix": "yarn run lint:md --fix & yarn run lint:stylelint --fix & yarn run lint:eslint --fix",
     "lint:eslint": "eslint ./src --ext .js,.ts,.tsx",
-    "lint:stylelint": "stylelint './src/*{.css,.scss,.tsx}' --syntax scss",
+    "lint:stylelint": "stylelint './src/*{.css,.scss,.ts,.tsx}' --syntax scss",
     "lint:md": "markdownlint ./ --ignore node_modules --ignore build",
     "update": "yarn upgrade --latest"
   },
