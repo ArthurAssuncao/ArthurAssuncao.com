@@ -22,13 +22,17 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   }
 
   code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
 
   a {
     text-decoration: none;
-    color: white;
+    color: ${({ theme }) => theme.palette.primary};
+  }
+
+  a:hover {
+    color: ${({ theme }) => theme.palette.secondary.darkened[0]};
   }
 `;
 

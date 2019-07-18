@@ -5,7 +5,7 @@ const NavStyle = styled.nav`
   display: flex;
   height: ${props => props.theme.sizes.headerHeight};
   position: relative;
-  width: 100%;
+  width: 100vw;
 `;
 
 const LogoSpan = styled.span`
@@ -75,10 +75,18 @@ const ListItemStyle = styled.li`
   @media (min-width: 0px) {
     flex: 1;
     height: ${props => props.theme.sizes.headerHeight};
-    transition: background-color .3s ease-out;
+    transition: background-color 0.3s ease-out;
     letter-spacing: 2px;
     font-weight: 400;
     line-height: ${props => props.theme.sizes.headerHeight};
+
+    a {
+      color: ${props => props.theme.palette.neutral[0]};
+    }
+
+    a:hover {
+      color: white;
+    }
 
     .icon {
       vertical-align: middle;
@@ -89,9 +97,9 @@ const ListItemStyle = styled.li`
     }
 
     &:hover {
-        cursor: pointer;
-        color: ${props => props.theme.palette.secondary.lightened[1]};
-        background-color: ${props => props.theme.palette.secondary.darkened[1]};
+      cursor: pointer;
+      color: ${props => props.theme.palette.secondary.lightened[1]};
+      background-color: ${props => props.theme.palette.secondary.darkened[1]};
     }
   }
 

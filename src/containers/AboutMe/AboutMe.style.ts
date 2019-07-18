@@ -8,6 +8,14 @@ const AboutMeStyle = styled.section`
   .aboutme-me {
     margin-bottom: 30px;
   }
+  .aboutme-education-production {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80vw;
+    margin-bottom: 20px;
+    line-height: 2rem;
+  }
 `;
 
 export default AboutMeStyle;
