@@ -39,7 +39,8 @@ theme.palette = {
     // Charcoal
     darkened: 'rgb(54, 69, 79)'
   },
-  white: '#fff'
+  white: '#fff',
+  black: '#111'
 };
 
 theme.fonts = {

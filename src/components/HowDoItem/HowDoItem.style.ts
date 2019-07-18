@@ -13,6 +13,7 @@ const HowDoItemStyle = styled.div`
     text-align: center;
     line-height: 1.8rem;
     font-size: 1.3rem;
+    color: ${props => props.theme.palette.black};
 
     .howDoItem-title {
       font-size: 2.5rem;

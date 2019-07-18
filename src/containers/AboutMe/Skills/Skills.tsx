@@ -8,6 +8,7 @@ import { GoRuby } from 'react-icons/go';
 import SkillsStyle from './Skills.style';
 import SkillGroup from './SkillGroup';
 import Skill from '../../../components/Skill';
+import { TypescriptIcon, JestIcon } from '../../../components/Icons';
 
 const Skills = () => {
   return (
@@ -27,7 +28,6 @@ const Skills = () => {
         </SkillGroup>
 
         <SkillGroup type="confortable">
-          <Skill name='ReactJS'><FaReact /></Skill>
           <Skill name='Python'><FaPython /></Skill>
           <Skill name='Trello'><FaTrello /></Skill>
           <Skill name='NPM'><FaNpm /></Skill >
@@ -35,6 +35,9 @@ const Skills = () => {
         </SkillGroup>
 
         <SkillGroup type="less-confortable">
+          <Skill name='ReactJS'><FaReact /></Skill>
+          <Skill name='Typescript'><TypescriptIcon /></Skill>
+          <Skill name='TDD with Jest'><JestIcon /></Skill>
           <Skill name='Ruby on Rails'><GoRuby /></Skill>
           <Skill name='NodeJS'><FaNode /></Skill >
           <Skill name='Circle CI'><FaRegCircle /></Skill>
