@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ProjectStyle from './Project.style';
+import { InferPropTypes } from '../../types';
 
 const projectPropTypes = {
   id: PropTypes.number.isRequired,
@@ -17,16 +18,6 @@ const projectDefaultProps = {
   description: 'No description',
   url: '#'
 };
-
-type InferPropTypes<
-  PropTypes,
-  DefaultProps = {},
-  Props = PropTypes.InferProps<PropTypes>
-  > = {
-    [Key in keyof Props]: Key extends keyof DefaultProps
-    ? Props[Key] | DefaultProps[Key]
-    : Props[Key]
-  }
 
 type ProjectProps = InferPropTypes<typeof projectPropTypes, typeof projectDefaultProps>;
 
