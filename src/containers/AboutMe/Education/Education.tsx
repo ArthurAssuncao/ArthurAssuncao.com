@@ -17,6 +17,24 @@ const Education = () => {
         dateStart={2011}
         dateEnd={2014}
       />
+      <Course
+        name='React Ninja'
+        school='Udemy (Fernando Daciuk instructor)'
+        dateStart={2019}
+        dateEnd={2019}
+      />
+      <Course
+        name='Techniques for Front End Development'
+        school='Instituto Federal do Sudeste de Minas Gerais (IFSEMG)'
+        dateStart={2015}
+        dateEnd={2015}
+      />
+      <Course
+        name='Python for Linux Network Administrators'
+        school='Instituto Federal do Sudeste de Minas Gerais (IFSEMG)'
+        dateStart={2012}
+        dateEnd={2012}
+      />
     </EducationStyle>
   );
 };
