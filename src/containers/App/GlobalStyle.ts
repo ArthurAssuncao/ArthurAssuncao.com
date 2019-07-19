@@ -26,6 +26,13 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
       monospace;
   }
 
+  ::selection {
+    background: ${({ theme }) => theme.palette.primary}; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: ${({ theme }) => theme.palette.primary}; /* Gecko Browsers */
+  }
+
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.palette.primary};
