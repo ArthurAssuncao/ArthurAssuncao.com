@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 import Project from '../../components/Project';
 import imgGloboHistorias from '../../assets/images/projects/globo-historias/thumbnail.jpg';
 import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbnail.jpeg';
