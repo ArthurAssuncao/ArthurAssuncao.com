@@ -11,7 +11,7 @@ const ScientificProduction = () => {
         publisher='Sensors (Basel) Journal'
         year={2019}
         qualisCC='A1'
-        impactFactor={3031}
+        impactFactor={3.031}
         sjr={0.59}
         hIndex={132}
         issn='1424-8220'
