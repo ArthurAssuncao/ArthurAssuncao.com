@@ -16,6 +16,11 @@ const LogoSpan = styled.span`
     letter-spacing: 0.7rem;
     color: ${props => props.theme.palette.neutral[0]};
 
+    .nav-link, .nav-link:hover{
+      text-decoration: none;
+      color: ${props => props.theme.palette.neutral[0]};
+    }
+
     .nav-lastName{
       display: none;
     }
