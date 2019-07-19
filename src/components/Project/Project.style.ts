@@ -50,7 +50,7 @@ const ProjectStyle = styled.div`
       /* use this value to count block height */
       line-height: 2rem;
       /* max-height = line-height (1.2) * lines max number (3) */
-      max-height: calc(2rem * 10);
+      max-height: calc(2rem * 15);
       /* fix problem when last visible word doesn't adjoin right side  */
       text-align: justify;
       /* place for '...' */
@@ -91,10 +91,10 @@ const ProjectStyle = styled.div`
   }
 
   @media (min-width: 768px), (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
-    width: 40vw;
+    width: 22vw;
 
     .project-description {
-      width: 35vw;
+      width: 20vw;
     }
   }
 
