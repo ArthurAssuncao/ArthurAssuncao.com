@@ -25,10 +25,10 @@ const Project = (props: ProjectProps) => {
     <ProjectStyle>
       <div className='project-item'>
         <h1 className='project-title'>
-          {props.name}
+          <a href={props.url}>{props.name}</a>
         </h1>
         <img alt={props.name} src={props.imgUrl} className='project-img' />
-        <p className='project-description'>{props.description}</p>
+        {/* <p className='project-description'>{props.description}</p> */}
       </div>
     </ProjectStyle>
   );

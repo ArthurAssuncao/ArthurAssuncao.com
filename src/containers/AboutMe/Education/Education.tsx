@@ -5,6 +5,9 @@ import Course from '../../../components/Course';
 const Education = () => {
   return (
     <EducationStyle>
+      <span className='education-title'>
+        Courses
+      </span>
       <Course
         name='Master of Degree in Computer Science'
         school='Universidade Federal de Ouro Preto (UFOP)'

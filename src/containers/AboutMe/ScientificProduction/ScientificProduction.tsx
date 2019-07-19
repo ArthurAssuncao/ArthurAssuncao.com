@@ -5,6 +5,9 @@ import Paper from '../../../components/Paper';
 const ScientificProduction = () => {
   return (
     <ScientificProductionStyle>
+      <span className='scientific-production-title'>
+        Scientific Production
+      </span>
       <Paper
         title='Vehicle Driver Monitoring through the Statistical Process Control'
         author={['Arthur N. Assuncao', 'Andre L. L. Aquino', 'Ricardo C. C. de M. Santos', 'Rodolfo L. M. Guimaraes', 'Ricardo A. R. Oliveira']}
