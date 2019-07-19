@@ -4,8 +4,20 @@ import imgGloboHistorias from '../../assets/images/projects/globo-historias/thum
 import imgEntregaRapida from '../../assets/images/projects/entrega-rapida/thumbnail.jpeg';
 import imgArthurAssuncaoSiteOld from '../../assets/images/projects/arthurassuncao-com2016/thumbnail-0.jpg';
 import ProjectsStyle from './Projects.style';
+import PropTypes from 'prop-types';
+import { InferPropTypes } from '../../types';
 
-const Projects = (props: any) => {
+const projectsDefaultProps = {
+
+};
+
+const projectsPropTypes = {
+  sectionClassName: PropTypes.string.isRequired
+};
+
+type ProjectsProps = InferPropTypes<typeof projectsPropTypes, typeof projectsDefaultProps>;
+
+const Projects = (props: ProjectsProps) => {
 
   return (
     <ProjectsStyle id="projects">

@@ -50,4 +50,6 @@ const SkillGroup = (props: SkillGroupProps) => {
   );
 };
 
+SkillGroup.defaultProps = skillGroupDefaultProps;
+
 export default SkillGroup;
