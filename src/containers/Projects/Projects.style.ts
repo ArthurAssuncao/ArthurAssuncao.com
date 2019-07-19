@@ -5,6 +5,7 @@ const ProjectsStyle = styled.section`
     background-color: ${props => props.theme.palette.neutral[3]};
     padding: 20px 0;
     width: 100vw;
+    text-align: center;
 
     .projects-list {
       display: flex;
