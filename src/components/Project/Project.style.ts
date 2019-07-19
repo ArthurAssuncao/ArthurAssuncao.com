@@ -31,14 +31,22 @@ const ProjectStyle = styled.div`
       height: auto;
       margin-top: 10px;
       margin-bottom: 10px;
-      max-height: 200px;
+      max-height: 170px;
+      min-height: 170px;
     }
 
-    .project-title {
+    .project-title, .project-title a {
       font-size: 2rem;
       color: ${props => props.theme.palette.grayscale.darkened};
       line-height: 2rem;
       text-align: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+      &:hover {
+        color: ${props => props.theme.palette.primary};
+      }
     }
 
     .project-description {
@@ -103,7 +111,8 @@ const ProjectStyle = styled.div`
 
   @media (min-width: 1200px) {
     .project-img {
-      max-height: 300px;
+      max-height: 170px;
+      min-height: 170px;
     }
   }
 `;

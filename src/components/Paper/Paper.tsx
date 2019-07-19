@@ -59,4 +59,6 @@ const Paper = (props: PaperProps) => {
   );
 };
 
+Paper.defaultProps = paperDefaultProps;
+
 export default Paper;

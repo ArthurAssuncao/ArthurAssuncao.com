@@ -25,8 +25,8 @@ const App = () => {
         <Header className='header' />
         <main className='main'>
           <HowDo />
-          <Projects sectionClassName='section-title' />
           <AboutMe />
+          <Projects sectionClassName='section-title' />
         </main>
         <Footer className='footer' sectionClassName='section-title' />
       </AppStyle>

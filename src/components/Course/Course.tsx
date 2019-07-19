@@ -26,4 +26,6 @@ const Course = (props: CourseProps) => {
   );
 };
 
+Course.defaultProps = courseDefaultProps;
+
 export default Course;

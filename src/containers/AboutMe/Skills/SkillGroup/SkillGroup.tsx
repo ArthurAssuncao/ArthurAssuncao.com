@@ -29,7 +29,7 @@ const generateTypeFriendly = (type: string) => {
   }
   else if (type === 'less-confortable') {
     typeText = 'Less Confortable';
-    typeDescription = 'Amazing in theroy, but still on a learning path';
+    typeDescription = 'Amazing in theory, but still on a learning path';
   }
   return [typeText, typeDescription];
 };
@@ -49,5 +49,7 @@ const SkillGroup = (props: SkillGroupProps) => {
     </SkillGroupStyle>
   );
 };
+
+SkillGroup.defaultProps = skillGroupDefaultProps;
 
 export default SkillGroup;

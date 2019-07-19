@@ -5,13 +5,16 @@ import Paper from '../../../components/Paper';
 const ScientificProduction = () => {
   return (
     <ScientificProductionStyle>
+      <span className='scientific-production-title'>
+        Scientific Production
+      </span>
       <Paper
         title='Vehicle Driver Monitoring through the Statistical Process Control'
         author={['Arthur N. Assuncao', 'Andre L. L. Aquino', 'Ricardo C. C. de M. Santos', 'Rodolfo L. M. Guimaraes', 'Ricardo A. R. Oliveira']}
         publisher='Sensors (Basel) Journal'
         year={2019}
         qualisCC='A1'
-        impactFactor={3031}
+        impactFactor={3.031}
         sjr={0.59}
         hIndex={132}
         issn='1424-8220'

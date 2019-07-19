@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
+import PropTypes from 'prop-types';
+import { InferPropTypes } from '../../types';
 
 const NavStyle = styled.nav`
   display: flex;
@@ -127,7 +129,22 @@ const ListItemStyle = styled.li`
   }
 `;
 
-const ListItem = (props: any) => {
+const listItemStyleDefaultProps = {
+
+};
+
+const listItemStylePropTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired,
+  url: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
+};
+
+type ListItemStyleProps = InferPropTypes<typeof listItemStylePropTypes, typeof listItemStyleDefaultProps>;
+
+const ListItem = (props: ListItemStyleProps) => {
   return (
     <ListItemStyle>
       <a href={props.url} aria-labelledby={`${props.url}_text`}>
@@ -137,6 +154,8 @@ const ListItem = (props: any) => {
     </ListItemStyle>
   );
 };
+
+ListItem.defaultProps = listItemStyleDefaultProps;
 
 export { NavStyle, LogoSpan, List, ListItem };
 export default NavStyle;
