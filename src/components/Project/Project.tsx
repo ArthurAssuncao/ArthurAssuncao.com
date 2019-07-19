@@ -8,8 +8,7 @@ const projectPropTypes = {
   name: PropTypes.string.isRequired,
   imgUrl: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  showLegend: PropTypes.bool.isRequired
+  url: PropTypes.string.isRequired
 };
 
 const projectDefaultProps = {
@@ -24,13 +23,13 @@ type ProjectProps = InferPropTypes<typeof projectPropTypes, typeof projectDefaul
 const Project = (props: ProjectProps) => {
   return (
     <ProjectStyle>
-      <div className='item'>
-        <h1>
+      <div className='project-item'>
+        <h1 className='project-title'>
           {props.name}
         </h1>
-        <img alt={props.name} src={props.imgUrl} />
+        <img alt={props.name} src={props.imgUrl} className='project-img' />
+        <p className='project-description'>{props.description}</p>
       </div>
-      {/* <p className={ props.showLegend ? 'legend': 'legend hidden' }>{ props.description }</p> */}
     </ProjectStyle>
   );
 };

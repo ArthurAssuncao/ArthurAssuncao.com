@@ -42,6 +42,11 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   a:hover {
     color: ${({ theme }) => theme.palette.secondary.darkened[0]};
   }
+
+  .hidden {
+    display: none;
+  }
+
 `;
 
 export default GlobalStyle;
