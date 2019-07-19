@@ -22,14 +22,31 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   }
 
   code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
+  }
+
+  ::selection {
+    background: ${({ theme }) => theme.palette.primary}; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: ${({ theme }) => theme.palette.primary}; /* Gecko Browsers */
   }
 
   a {
     text-decoration: none;
-    color: white;
+    color: ${({ theme }) => theme.palette.primary};
+    transition: background-color 0.3s all;
   }
+
+  a:hover {
+    color: ${({ theme }) => theme.palette.secondary.darkened[0]};
+  }
+
+  .hidden {
+    display: none;
+  }
+
 `;
 
 export default GlobalStyle;

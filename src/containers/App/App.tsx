@@ -5,6 +5,7 @@ import Footer from '../Footer';
 import Header from '../Header';
 import HowDo from '../HowDo';
 import Projects from '../Projects';
+import AboutMe from '../AboutMe';
 import AppStyle from './App.style';
 import GlobalStyle from './GlobalStyle';
 
@@ -25,6 +26,7 @@ const App = () => {
         <main className='main'>
           <HowDo />
           <Projects sectionClassName='section-title' />
+          <AboutMe />
         </main>
         <Footer className='footer' sectionClassName='section-title' />
       </AppStyle>

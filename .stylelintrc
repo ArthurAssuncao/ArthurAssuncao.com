@@ -1,15 +1,17 @@
 {
+  "processors": ["stylelint-processor-styled-components"],
   "extends": [
-    "stylelint-config-recommended",
-    "stylelint-config-recommended-scss"
+    "stylelint-config-recommended-scss",
+    "stylelint-config-styled-components"
   ],
+  "parser": "typescript-eslint-parser",
   "syntax": "scss",
   "rules": {
     "indentation": 2,
     "string-quotes": "single",
     "no-duplicate-selectors": true,
     "block-no-empty": null,
-    "unit-whitelist": ["px", "rem", "s"],
+    "unit-whitelist": ["px", "rem", "vw", "vh", "s", "vmin", "vmax", "ex", "ch"],
     "max-empty-lines": 2,
     "color-hex-case": "upper",
     "selector-max-id": 0,

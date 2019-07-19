@@ -1,27 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import HowDoItemStyle from './HowDoItem.style';
+import { InferPropTypes } from '../../types';
 
 const howDoItemDefaultProps = {
   childrenPosition: 'last'
 };
 
 const howDoItemPropTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   childrenPosition: PropTypes.string
 };
-
-type InferPropTypes<
-  PropTypes,
-  DefaultProps = {},
-  Props = PropTypes.InferProps<PropTypes>
-  > = {
-    [Key in keyof Props]: Key extends keyof DefaultProps
-    ? Props[Key] | DefaultProps[Key]
-    : Props[Key]
-  }
 
 type HowDoItemProps = InferPropTypes<typeof howDoItemPropTypes, typeof howDoItemDefaultProps>;
 

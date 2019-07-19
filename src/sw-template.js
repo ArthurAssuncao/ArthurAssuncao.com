@@ -43,8 +43,8 @@ if ('function' === typeof importScripts) {
       })
     );
 
-    workbox.core.skipWaiting();
-    workbox.core.clientsClaim();
+    // workbox.core.skipWaiting();
+    // workbox.core.clientsClaim();
   } else {
     console.log('Workbox could not be loaded. No Offline support');
   }
