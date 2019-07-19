@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.palette.primary};
+    transition: background-color 0.3s all;
   }
 
   a:hover {

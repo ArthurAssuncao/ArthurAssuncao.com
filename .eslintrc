@@ -20,7 +20,10 @@
     ],
     "quotes": [
       "error",
-      "single"
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
     ],
     "semi": [
       2,

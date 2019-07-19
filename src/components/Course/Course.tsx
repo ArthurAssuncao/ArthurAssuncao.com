@@ -20,8 +20,8 @@ const Course = (props: CourseProps) => {
   return (
     <CourseStyle>
       <div className='course-name'>{props.name}</div>
-      <div>{props.school}</div>
-      <div><span>{props.dateStart}</span> - <span>{props.dateEnd}</span></div>
+      <div className='course-school'>{props.school}</div>
+      <div className='course-date'><span>{props.dateStart}</span> - <span>{props.dateEnd}</span></div>
     </CourseStyle>
   );
 };
