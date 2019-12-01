@@ -54,7 +54,7 @@
     "lodash.merge": "^4.6.2",
     "markdownlint": "^0.15.0",
     "markdownlint-cli": "^0.17.0",
-    "netlify": "^2.4.6",
+    "netlify": "^3.0.0",
     "netlify-cli": "^2.11.27",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.7.2",
