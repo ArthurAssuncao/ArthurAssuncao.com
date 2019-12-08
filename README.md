@@ -32,3 +32,12 @@
 - Stled Components
 - Styled Reset
 - Stylis
+
+#### To update code
+
+```$ git branch develop```
+```$ git checkout develop```
+```$ yarn upgrade --latest```
+```git status```
+```git commit -m "packages updated"```
+```git push origin develop```
