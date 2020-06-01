@@ -52,7 +52,7 @@
     "coveralls": "^3.1.0",
     "eslint-config-react-app": "^5.2.1",
     "lodash.merge": "^4.6.2",
-    "markdownlint": "^0.20.2",
+    "markdownlint": "^0.20.3",
     "markdownlint-cli": "^0.23.0",
     "netlify": "^4.1.6",
     "netlify-cli": "^2.51.0",
