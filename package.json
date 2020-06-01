@@ -53,7 +53,7 @@
     "eslint-config-react-app": "^5.2.1",
     "lodash.merge": "^4.6.2",
     "markdownlint": "^0.20.2",
-    "markdownlint-cli": "^0.23.0",
+    "markdownlint-cli": "^0.23.1",
     "netlify": "^4.1.6",
     "netlify-cli": "^2.51.0",
     "pre-commit": "^1.2.2",
