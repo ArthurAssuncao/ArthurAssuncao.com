@@ -5,14 +5,16 @@ const FooterStyle = styled.footer`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ${props => props.theme.palette.grayscale.darkened};
-    height: ${props => props.theme.sizes.footerHeight};
-    color: ${props => props.theme.palette.neutral[0]};
+    background-color: ${(props) => props.theme.palette.grayscale.darkened};
+    height: ${(props) => props.theme.sizes.footerHeight};
+    color: ${(props) => props.theme.palette.neutral[0]};
     padding: 30px;
+    width: calc(99vw - 60px);
   }
 
-  @media (min-width: 768px), (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
-    height: calc(${props => props.theme.sizes.footerHeight} - 100px);
+  @media (min-width: 768px),
+    (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
+    height: calc(${(props) => props.theme.sizes.footerHeight} - 100px);
   }
 `;
 

@@ -4,12 +4,11 @@ const HeaderStyle = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 0 30px;
   background-color: ${(props) => props.theme.palette.primary};
   box-shadow: 0 0 5px 0 ${(props) => props.theme.palette.grayscale.darkened};
   position: fixed;
   z-index: 11;
-  width: calc(100vw - 2vw);
+  width: 99.5vw;
   height: ${(props) => props.theme.sizes.headerHeight};
 `;
 
