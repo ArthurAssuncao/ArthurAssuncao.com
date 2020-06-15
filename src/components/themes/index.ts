@@ -1,4 +1,3 @@
-
 // https://mycolor.space/?hex=%23DC443A&sub=1
 // http://paletton.com/
 // https://www.canva.com/colors/color-palettes/pomegranate-crush/
@@ -11,7 +10,7 @@
 const theme = {
   palette: {} as any,
   fonts: {} as any,
-  sizes: {} as any
+  sizes: {} as any,
 };
 
 // middle color is the right color
@@ -22,10 +21,15 @@ theme.palette = {
   // PANTONE 17-1564 TPX Fiesta: light 1, light 2, dark 1 and dark 2
   secondary: {
     lightened: ['#FF958C', '#EB675C'],
-    darkened: ['#CA2619', '#AF1408']
+    darkened: ['#CA2619', '#AF1408'],
   },
   // pastel yellow, pastel blue, pastel green
-  neutral: ['rgb(252,247,222)', 'rgb(222,243,253)', 'rgb(222,253,224)', 'rgb(255, 253, 208)'],
+  neutral: [
+    'rgb(222,243,253)', // "rgb(252,247,222)", // #bfcecd
+    'rgb(222,243,253)',
+    'rgb(222,253,224)',
+    'rgb(255, 253, 208)',
+  ],
   // pastel red
   danger: 'rgb(255,105,97)',
   // pastel oragen
@@ -37,24 +41,25 @@ theme.palette = {
   grayscale: {
     lightened: '#f9fbfb',
     // Charcoal
-    darkened: 'rgb(54, 69, 79)'
+    darkened: 'rgb(54, 69, 79)',
   },
   white: '#fff',
-  black: '#111'
+  black: '#111',
 };
 
 theme.fonts = {
-  primary: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+  primary:
+    '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
   pre: 'Consolas, Liberation Mono, Menlo, Courier, monospace',
   quote: 'Georgia, serif',
-  code: 'source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace'
+  code: 'source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace',
 };
 
 theme.sizes = {
   maxWidth: '1100px',
   font: '15px',
   headerHeight: '70px',
-  footerHeight: '650px'
+  footerHeight: '650px',
 };
 
 export type ThemeType = typeof theme;

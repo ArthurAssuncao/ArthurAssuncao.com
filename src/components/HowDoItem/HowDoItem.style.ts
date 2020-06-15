@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const HowDoItemStyle = styled.div`
   @media (min-width: 0px) {
-    background-color: ${props => props.theme.palette.neutral[0]};
+    background-color: ${(props) => props.theme.palette.neutral[0]};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@ const HowDoItemStyle = styled.div`
     text-align: center;
     line-height: 1.8rem;
     font-size: 1.3rem;
-    color: ${props => props.theme.palette.black};
+    color: ${(props) => props.theme.palette.black};
 
     .howDoItem-title {
       font-size: 2.5rem;
@@ -29,7 +29,7 @@ const HowDoItemStyle = styled.div`
       text-align: justify;
     }
 
-    .img-container{
+    .img-container {
       font-size: 15rem;
       padding: 1rem 0;
     }
@@ -51,12 +51,13 @@ const HowDoItemStyle = styled.div`
       line-height: 2.2rem;
     }
 
-    .img-container{
+    .img-container {
       font-size: 17rem;
     }
   }
 
-  @media (min-width: 768px), (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
+  @media (min-width: 768px),
+    (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
     flex-direction: row;
     min-height: 45rem;
     .howDoItem-title {
@@ -73,17 +74,17 @@ const HowDoItemStyle = styled.div`
       text-align: center;
     }
 
-    .img-container{
+    .img-container {
       font-size: 25rem;
     }
   }
 
-  @media (min-width: 992px), (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
+  @media (min-width: 992px),
+    (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
     max-width: 80vw;
   }
 
   @media (min-width: 1200px) {
-
   }
 `;
 

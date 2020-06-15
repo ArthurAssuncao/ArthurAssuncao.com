@@ -1,27 +1,28 @@
-import React from 'react';
-import SkillStyle from './Skill.style';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { InferPropTypes } from '../../types';
+import SkillStyle from './Skill.style';
 
-const skillDefaultProps = {
-
-};
+const skillDefaultProps = {};
 
 const skillPropTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
+    PropTypes.node,
   ]).isRequired,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
 };
 
-type SkillProps = InferPropTypes<typeof skillPropTypes, typeof skillDefaultProps>;
+type SkillProps = InferPropTypes<
+  typeof skillPropTypes,
+  typeof skillDefaultProps
+>;
 
 const Skill = (props: SkillProps) => {
   return (
-    <SkillStyle>
-      <span className='skill-icon'>{props.children}</span>
-      <span className='skill-name'>{props.name}</span>
+    <SkillStyle aria-label={`I know ${props.name}`}>
+      <span className="skill-icon">{props.children}</span>
+      <span className="skill-name">{props.name}</span>
     </SkillStyle>
   );
 };

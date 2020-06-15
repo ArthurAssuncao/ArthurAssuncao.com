@@ -60,21 +60,22 @@ const FormStyle = styled.form`
         text-decoration: none;
         font-weight: 300;
         font-size: 23px;
-        color: ${props => props.theme.palette.neutral[0]};
-        background-color: ${props => props.theme.palette.accent};
+        color: ${(props) => props.theme.palette.neutral[0]};
+        background-color: ${(props) => props.theme.palette.accent};
         text-align: center;
         transition: all 0.2s;
-        box-shadow: 0 0 5px 0 ${props => props.theme.palette.grayscale.darkened};
+        box-shadow: 0 0 5px 0
+          ${(props) => props.theme.palette.grayscale.darkened};
       }
-      .button-submit:hover{
+      .button-submit:hover {
         color: lightgray;
         border-color: lightgray;
         cursor: pointer;
       }
-      @media all and (max-width:30em){
-        .button-submit{
-          display:block;
-          margin:0.4em auto;
+      @media all and (max-width: 30em) {
+        .button-submit {
+          display: block;
+          margin: 0.4em auto;
         }
       }
     }
@@ -84,38 +85,43 @@ const FormStyle = styled.form`
       margin-right: 5px;
     }
 
-    input, textarea {
-      padding: 0px 16px;
+    input,
+    textarea {
+      padding: 0px 1.4vw;
       margin-left: 10px;
       border: none;
       border-radius: 4px;
       background-color: rgba(255, 255, 255, 0.8);
       outline: none;
       box-shadow: 0px 4px 20px 0px transparent;
-      transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out, 0.1s padding ease-in-out;
+      transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out,
+        0.1s padding ease-in-out;
 
       &:hover {
         background-color: rgba(255, 255, 255, 0.45);
-        box-shadow: 0px 4px 20px 0px ${props => props.theme.palette.grayscale.darkened};
+        box-shadow: 0px 4px 20px 0px
+          ${(props) => props.theme.palette.grayscale.darkened};
       }
     }
 
-    .form-name input, .form-email input {
+    .form-name input,
+    .form-email input {
       height: 45px;
       width: 60vw;
       margin: 10px auto;
     }
 
-    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
       color: rgba(200, 200, 200, 0.8);
     }
   }
 
   @media (min-width: 480px) {
-
   }
 
-  @media (min-width: 768px), (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
+  @media (min-width: 768px),
+    (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
     grid-template-areas:
       "formname formemail"
       "formmessage formmessage"
@@ -132,7 +138,8 @@ const FormStyle = styled.form`
       justify-self: start;
     }
 
-    .form-name input, .form-email input {
+    .form-name input,
+    .form-email input {
       height: 45px;
       width: 25vw;
     }
@@ -149,12 +156,11 @@ const FormStyle = styled.form`
     }
   }
 
-  @media (min-width: 992px), (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
-
+  @media (min-width: 992px),
+    (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
   }
 
   @media (min-width: 1200px) {
-
   }
 `;
 

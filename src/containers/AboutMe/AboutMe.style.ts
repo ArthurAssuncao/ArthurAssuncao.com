@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const AboutMeStyle = styled.section`
   @media (min-width: 0px) {
     padding: 40px 0px 40px 0px;
-    background-color: ${props => props.theme.palette.neutral[3]};
-    color: ${props => props.theme.palette.black};
+    background-color: ${(props) => props.theme.palette.neutral[0]};
+    color: ${(props) => props.theme.palette.black};
 
     .aboutme-me {
       margin-bottom: 30px;
@@ -16,8 +16,6 @@ const AboutMeStyle = styled.section`
       width: 80vw;
       margin-bottom: 20px;
       line-height: 2rem;
-
-
     }
   }
 
@@ -27,7 +25,8 @@ const AboutMeStyle = styled.section`
     }
   }
 
-  @media (min-width: 768px), (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
+  @media (min-width: 768px),
+    (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
     .aboutme-education-production {
       display: flex;
       flex-direction: row;
@@ -42,8 +41,8 @@ const AboutMeStyle = styled.section`
     }
   }
 
-  @media (min-width: 992px), (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
-
+  @media (min-width: 992px),
+    (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
   }
 
   @media (min-width: 1200px) {

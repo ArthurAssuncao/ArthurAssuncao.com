@@ -9,17 +9,19 @@ const ProjectStyle = styled.div`
     padding: 20px;
     width: 90vw;
     margin: 0 auto;
-    color: ${props => props.theme.palette.grayscale.darkened};
+    color: ${(props) => props.theme.palette.grayscale.darkened};
 
     .project-item {
-      background-color: ${props => props.theme.palette.white};
+      background-color: ${(props) => props.theme.palette.white};
       padding: 10px;
       margin-bottom: 20px;
       border-radius: 4px;
-      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
       &:hover {
-        box-shadow: 0 4px 7px 0 rgba(0,0,0,0.16), 0 4px 12px 0 rgba(0,0,0,0.12);
+        box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16),
+          0 4px 12px 0 rgba(0, 0, 0, 0.12);
         cursor: pointer;
       }
     }
@@ -35,9 +37,10 @@ const ProjectStyle = styled.div`
       min-height: 170px;
     }
 
-    .project-title, .project-title a {
+    .project-title,
+    .project-title a {
       font-size: 2rem;
-      color: ${props => props.theme.palette.grayscale.darkened};
+      color: ${(props) => props.theme.palette.grayscale.darkened};
       line-height: 2rem;
       text-align: center;
       text-overflow: ellipsis;
@@ -45,7 +48,7 @@ const ProjectStyle = styled.div`
       white-space: nowrap;
 
       &:hover {
-        color: ${props => props.theme.palette.primary};
+        color: ${(props) => props.theme.palette.primary};
       }
     }
 
@@ -68,7 +71,7 @@ const ProjectStyle = styled.div`
     /* create the ... */
     .project-description:before {
       /* points in the end */
-      content: '...';
+      content: "...";
       /* absolute position */
       position: absolute;
       /* set position to right bottom corner of block */
@@ -79,7 +82,7 @@ const ProjectStyle = styled.div`
     /* hide ... if we have text, which is less than or equal to max lines */
     .project-description:after {
       /* points in the end */
-      content: '';
+      content: "";
       /* absolute position */
       position: absolute;
       /* set position to right bottom corner of text */
@@ -95,10 +98,10 @@ const ProjectStyle = styled.div`
   }
 
   @media (min-width: 480px) {
-
   }
 
-  @media (min-width: 768px), (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
+  @media (min-width: 768px),
+    (min-width: 768px) and (max-device-width: 480px) and (orientation: portrait) {
     width: 22vw;
 
     .project-description {
@@ -106,7 +109,8 @@ const ProjectStyle = styled.div`
     }
   }
 
-  @media (min-width: 992px), (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
+  @media (min-width: 992px),
+    (min-width: 992px) and (max-device-width: 640px) and (orientation: landscape) {
   }
 
   @media (min-width: 1200px) {
