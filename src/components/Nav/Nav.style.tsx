@@ -7,7 +7,7 @@ const NavStyle = styled.nav`
   display: flex;
   height: ${(props) => props.theme.sizes.headerHeight};
   position: relative;
-  width: 100vw;
+  flex: 1;
 `;
 
 const LogoSpan = styled.span`

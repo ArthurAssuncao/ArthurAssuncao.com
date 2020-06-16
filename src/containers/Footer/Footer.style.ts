@@ -8,8 +8,9 @@ const FooterStyle = styled.footer`
     background-color: ${(props) => props.theme.palette.grayscale.darkened};
     height: ${(props) => props.theme.sizes.footerHeight};
     color: ${(props) => props.theme.palette.neutral[0]};
-    padding: 30px;
-    width: calc(99vw - 60px);
+    /* padding: 30px; */
+    width: 100%;
+    justify-content: space-between;
   }
 
   @media (min-width: 768px),

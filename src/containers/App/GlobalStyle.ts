@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import { ThemeType } from '../../components/themes';
 import { reset } from 'styled-reset';
+import { ThemeType } from '../../components/themes';
 
 const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   ${reset}
@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   }
 
   body {
-    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
@@ -19,6 +18,23 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 1.6rem;
+    
+  }
+
+  @media (min-width: 0px) {
+    body {
+      width: 100vw;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    body {
+      width: 98vw;
+      margin: 0 auto;
+      box-shadow: 0 0 5px 0 ${(props) =>
+    props.theme.palette.grayscale.darkened};
+    }
   }
 
   code {
@@ -27,7 +43,8 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   }
 
   ::selection {
-    background: ${({ theme }) => theme.palette.primary}; /* WebKit/Blink Browsers */
+    background: ${({ theme }) =>
+    theme.palette.primary}; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
     background: ${({ theme }) => theme.palette.primary}; /* Gecko Browsers */
