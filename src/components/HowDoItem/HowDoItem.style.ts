@@ -19,6 +19,7 @@ const HowDoItemStyle = styled.div`
       font-size: 2.5rem;
       line-height: 2.5rem;
       padding-bottom: 1rem;
+      font-weight: 600;
 
       &:first-letter {
         font-size: 3rem;

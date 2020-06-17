@@ -11,6 +11,7 @@ const FooterStyle = styled.footer`
     /* padding: 30px; */
     width: 100%;
     justify-content: space-between;
+    padding-bottom: 10px;
   }
 
   @media (min-width: 768px),

@@ -55,7 +55,7 @@
     "markdownlint": "^0.20.3",
     "markdownlint-cli": "^0.23.1",
     "netlify": "^4.3.1",
-    "netlify-cli": "^2.53.0",
+    "netlify-cli": "^2.54.0",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.7.2",
     "react-helmet": "^6.1.0",
