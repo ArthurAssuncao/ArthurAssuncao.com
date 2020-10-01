@@ -69,7 +69,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
     "stylelint-scss": "^3.17.2",
-    "stylis": "^4.0.0",
+    "stylis": "^4.0.3",
     "typescript": "^3.9.2",
     "typescript-eslint-parser": "^22.0.0",
     "workbox-build": "^5.1.3",
