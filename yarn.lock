@@ -8970,6 +8970,13 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
+linkify-it@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/linkify-it/-/linkify-it-3.0.2.tgz#f55eeb8bc1d3ae754049e124ab3bb56d97797fb8"
+  integrity sha512-gDBO4aHNZS6coiZCKVhSNh43F9ioIL4JwRjLZPkoLIY4yZFwg264Y5lu2x6rb1Js42Gh6Yqm2f6L2AJcnkzinQ==
+  dependencies:
+    uc.micro "^1.0.1"
+
 load-json-file@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-2.0.0.tgz#7947e42149af80d696cbf797bcaabcfe1fe29ca8"
@@ -9406,6 +9413,17 @@ markdown-it@10.0.0:
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
+markdown-it@11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-11.0.0.tgz#dbfc30363e43d756ebc52c38586b91b90046b876"
+  integrity sha512-+CvOnmbSubmQFSA9dKz1BRiaSMV7rhexl3sngKqFyXSagoA3fBdJQ8oZWtRy2knXdpDXaBw44euz37DeJQ9asg==
+  dependencies:
+    argparse "^1.0.7"
+    entities "~2.0.0"
+    linkify-it "^3.0.1"
+    mdurl "^1.0.1"
+    uc.micro "^1.0.5"
+
 markdown-table@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-2.0.0.tgz#194a90ced26d31fe753d8b9434430214c011865b"
@@ -9438,7 +9456,14 @@ markdownlint-rule-helpers@~0.9.0:
   resolved "https://registry.yarnpkg.com/markdownlint-rule-helpers/-/markdownlint-rule-helpers-0.9.0.tgz#fbe39bb879bebbcd5dd38c47d9b3c264c3b88643"
   integrity sha512-ySKvg7tlOAxLzGZyu3J3pKGGNHAQgQNcZOMFRd2b5MrhA00j40XYL1mtAI34NzCbVfvhnPPynh5AsJoL+uRHcw==
 
-markdownlint@^0.20.2, markdownlint@~0.20.2:
+markdownlint@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/markdownlint/-/markdownlint-0.21.0.tgz#411a6937315c7562042e478cd91f52194ff88da4"
+  integrity sha512-rTxr0fbCFmS65oxXBD0HNy3/+PSukLS+b7Z6rGDWbjdRJp/e2dKj538r3KTn8oXrusx+ZtuYOozV2Knpnn0pkQ==
+  dependencies:
+    markdown-it "11.0.0"
+
+markdownlint@~0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/markdownlint/-/markdownlint-0.20.2.tgz#fecd591da64f3c6ee39cc0a7294560c9c14cf299"
   integrity sha512-TU/SgsylEzp9oAj9dGGZ6009yJq48GpEAeYIsREje5NuvadzO12qvl4wV21vHIerdPy/aSEyM2e9c+CzWq6Reg==
